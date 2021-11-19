@@ -274,15 +274,23 @@ P {
 }
 /* ----  Navbar, Showcase, Logo  END ------ */
 
+
 /* SIMON - About ---------------------------------------------------- */
-.text h1 {
+  
+.container-about {
   display: flex;
+  justify-content: space-around;
+  padding-top: 25vh;
+}
+
+.text-about h1 {
+display: flex;
   justify-content: left;
   font-family: roboto;
   margin-top: 100px;
 }
 
-.text p {
+.text-about p {
   display: flex;
   justify-content: right;
   font-family: roboto;
@@ -325,8 +333,7 @@ P {
   font-weight: 600;
   padding-right: 8rem;
 }
-/* Simons About - END */
-
+/* Simons About - END ----------------------------------------------*/
 
 
 /* features section  Nchombua yvette -------------------------------*/
