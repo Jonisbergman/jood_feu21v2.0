@@ -280,7 +280,7 @@ P {
 .container-about {
   display: flex;
   justify-content: space-around;
-  padding-top: 25vh;
+  padding-top: 5vh;
 }
 
 .text-about h1 {
