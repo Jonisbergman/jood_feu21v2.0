@@ -41,12 +41,8 @@ P {
   font-size: 0.9rem;
 }
 
-
-
-
-
-
 /* CAROLINE - NAVBAR, SHOWCASE, LOGO */
+
 
 #showcase {
   /* position: relative; */
@@ -278,10 +274,7 @@ P {
 }
 /* ----  Navbar, Showcase, Logo  END ------ */
 
-
-
-
-/* SIMON - About */
+/* SIMON - About ---------------------------------------------------- */
 .text h1 {
   display: flex;
   justify-content: left;
@@ -336,7 +329,7 @@ P {
 
 
 
-/* features section  Nchombua yvette*/
+/* features section  Nchombua yvette -------------------------------*/
 
 #features {
   background-color: #fcfcfc;
@@ -407,6 +400,13 @@ P {
   font-size: 40px;
   color: #333333;   } 
 
+
+  #applications p {
+    font-family: 'Robot Regular' sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
   /* APPLICATIONS STATISTICS Av Caroline */
 .app-statistics {
   height: 500px;
@@ -439,6 +439,7 @@ P {
   display: ;
 }
 /* APP STATS End */
+
 
 
   /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
@@ -549,57 +550,7 @@ P {
      letter-spacing: 0;
   }
   /* Contact-us end*/
-  
-  
-  @media (min-width: 578px) {
-    .container {
-      max-width: 530px;
-    }
-    .downl-app .container{
-      text-align: center;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-    .downl-app .row{
-      text-align: center;
-    }
-  }
-  /* media querie between  */
-  
-  @media (min-width: 800px) {
-    .container {
-      max-width: 790px;
-    }
-    
-  }
    
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-
-
-.roboto {
-  font-family: "Roboto";
-}
-
-.slab {
-  font-family: "Roboto-slab", sans-serif;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
 
 /* features section  Nchombua yvette*/
 
@@ -739,18 +690,25 @@ footer ul li :hover {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
-@media (min-width: 992px) {
+
+@media (min-width: 576px) {
   .container {
-    max-width: 960px;
+    max-width: 530px;
+  }
+  .downl-app .container{
+    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .downl-app .row{
+    text-align: center;
+  }
+
   .navbar-toggler {
     display: none;
   }
@@ -760,20 +718,24 @@ footer ul li :hover {
   .navbar-nav {
     flex-direction: row;
   }
+ 
+
   .navbar-brand a {
     padding: 0 .3rem;
   }
+
   .top-nav {
     display: block;
   }
-  /* .showcase-text {
-    display: block;
-  } */
+  
 
+  }
+  
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
-#applications p {
-    font-family: 'Robot Regular' sans-serif;
-    font-size: 16px;
-    color: #8A8A8A;
-}
+
