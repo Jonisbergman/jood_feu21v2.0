@@ -48,6 +48,7 @@ P {
 }
 
 
+
 /* features section  Nchombua yvette*/
 
 #features {
@@ -60,9 +61,6 @@ P {
   background-size: calc(100% - 20px);
   max-width: 80%;
 }
-
-
-
 
 #showcase {
   /* position: relative; */
@@ -413,6 +411,12 @@ body, html {
   font-size: 40px;
   color: #333333;   } 
 
+  #applications p {
+    font-family: 'Robot Regular' sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
 
 
   /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
@@ -523,57 +527,7 @@ body, html {
      letter-spacing: 0;
   }
   /* Contact-us end*/
-  
-  
-  @media (min-width: 578px) {
-    .container {
-      max-width: 530px;
-    }
-    .downl-app .container{
-      text-align: center;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-    .downl-app .row{
-      text-align: center;
-    }
-  }
-  /* media querie between  */
-  
-  @media (min-width: 800px) {
-    .container {
-      max-width: 790px;
-    }
-    
-  }
    
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-
-
-.roboto {
-  font-family: "Roboto";
-}
-
-.slab {
-  font-family: "Roboto-slab", sans-serif;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
 
 /* features section  Nchombua yvette*/
 
@@ -713,18 +667,25 @@ footer ul li :hover {
 }
 
 
-
-
-
-
 /* MEDIA QUERIES */
-@media (min-width: 992px) {
+
+@media (min-width: 576px) {
   .container {
-    max-width: 960px;
+    max-width: 530px;
+  }
+  .downl-app .container{
+    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .downl-app .row{
+    text-align: center;
+  }
+
   .navbar-toggler {
     display: none;
   }
@@ -734,20 +695,19 @@ footer ul li :hover {
   .navbar-nav {
     flex-direction: row;
   }
-  a {
-    padding: 0 .3rem;
-  }
+  
   .top-nav {
     display: block;
   }
-  /* .showcase-text {
-    display: block;
-  } */
+  
 
+  }
+  
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
-#applications p {
-    font-family: 'Robot Regular' sans-serif;
-    font-size: 16px;
-    color: #8A8A8A;
-}
+
