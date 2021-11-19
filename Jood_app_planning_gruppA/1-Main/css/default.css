@@ -25,48 +25,6 @@
 }
 
 
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: contain;
-    width: 300px;
-    height: 900px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    /* object-fit: contain; */
-    /* margin-left: 10rem; */
-  }
-
-#app-text {
-   text-align: center;
-   
-}
-
-#app-text h1{
-    
-    margin-bottom: 2px;
-}
-
-#app-text p {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px;
-    width: 50%;
- 
-}
-
-#applications h1 {
-    font-family: 'Roboto Black';
-    font-size: 40px;
-    color: #333333;   } 
 
 
 body,
@@ -105,6 +63,7 @@ P {
 
 
 
+
 #showcase {
   /* position: relative; */
   /* top: auto; */
@@ -114,25 +73,22 @@ P {
   background-position-y: bottom;
   background-position-x: center;
   background-attachment: sticky;
-  min-width: 1200px;
+  min-width: 1150px;
 }
 
-.top-nav .container, .navbar .container {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
 .navbar {
   padding: 2rem 1rem;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 .link {
   text-decoration: none;
   font-weight: 600;
+  font-size: 1.7vh;
+  letter-spacing: 0.11vh;
   color: white;
-  margin-left: 1rem;
+  /* margin-left: -0.1rem; */
   padding: 1rem;
   display: inline-block;
   position: relative;
@@ -150,14 +106,14 @@ P {
 }
 .button-app {
   padding: 0 2rem;
-  height: 3rem;
-  margin-top: 0.75rem;
+  height: 2.5rem;
+  margin-top: 0.35rem;
   border: 1px solid transparent;
   border-radius: 10px;
   /* outline: none; */
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.6vh;
   background-color: #FFBB00;
   color: white;
   margin-left: 5vh;
@@ -186,66 +142,72 @@ P {
   list-style: none;
 }
 .showcase-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: white;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   margin-bottom: 2rem;
 }
 .showcase-text {
-  width: 50%;
-  margin-bottom: 8vh;
+  /* width: 50%; */
+  margin-bottom: 20%;
 }
 .showcase-text h1 {
   font-family: 'Poppins';
   font-size: 3rem;
   font-weight: bold;
-  letter-spacing: 0.2vh;
+  letter-spacing: 0.1vh;
   margin-bottom: 4vh;
 }
 .showcase-text p {
   font-family: 'Poppins';
-  font-size: 1.6vh;
-  font-weight: normal;
-  width: 80%;
-  letter-spacing: 0.15vh;
+  font-size: 1.5vh;
+  /* width: 80%; */
+  letter-spacing: 0.1vh;
   line-height: 3vh;
-  margin-bottom: 3vh;
+  /* margin-bottom: 1vh; */
 }
-.showcase-content img {
-  margin-right: -2rem;
-  height: 80vh;
-  margin-bottom: 8vh;
+.mobiler img {
+  /* height: 40rem; */
+  width: 115%;
+  margin-top: -2rem;
   /* display: block; */
+}
+
+.ball img {
+  margin-right: -2rem;
+  margin-bottom: 0.4rem;
 }
 
 .buttons {
   display: flex;
   justify-content: flex-start;
   /* align-items: center; */
+  height: max-content;
   margin-bottom: 7vh;
 }
 /* .btn-2 {
   display: grid;
 } */
 .btn-download-now {
-  margin-right: 1rem;
-  padding: 0.6rem 2rem;
-  border: 2px solid white;
+  margin-right: 0.2rem;
+  /* margin-top: 0.3rem; */
+  padding: 0rem 1.5rem;
+  height: 2.5rem;
+  border: 1.8px solid white;
   border-radius: 10px;
   outline: none;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.7vh;
+  letter-spacing: 0.1vh;
   background-color: transparent;
   color: white;
 }
 .btn-download-now:hover {
-  border: 2px solid #FFBB00;
+  border: 1.8px solid #FFBB00;
   box-shadow: 3px 6px 10px #FFBB00;
-  text-shadow: 3px 6px 10px #333;
+  text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
+  transform: rotateZ(5deg)
 }
 
 .btn-2 {
@@ -255,13 +217,13 @@ P {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.2rem 3rem;
+  padding: 0rem 1.5rem;
   border: 1px solid transparent;
   border-radius: 10px;
   outline: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.8vh;
   background-color: transparent;
   color: white;
   }
@@ -271,8 +233,8 @@ P {
   .ball {
       display: inline-block;
       background-color: #FFBB00;
-      height: 45px;
-      width: 45px;
+      height: 35px;
+      width: 35px;
       border-radius: 50%;
       transform: translate(-35%, -5%);
       /* margin-bottom: 0.5rem;
@@ -280,14 +242,14 @@ P {
       border: none;
   }
   #video {
-      height: 20px; 
-      transform: translate(-70%, 65%);
+      height: 13px; 
+      transform: translate(-115%, 68%);
    }
   .btn-watch-video:hover .ball {
       /* background-color: var(--primary-color); */
   background-color: #FFBB00;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   left: -7rem;
   display: flex;
   justify-content: center;
@@ -298,7 +260,8 @@ P {
   outline-offset: 5px;
   }
 .btn-watch-video:hover img {
-  display: none;
+  /* display: none; */
+  margin-bottom: 0.99rem;
 }
 .btn-watch-video:hover {
   font-size: 110%;
@@ -313,17 +276,23 @@ P {
   justify-content: space-around;
   align-items: center;
   margin: 5rem 0rem;
+  overflow: hidden;
 }
-
-
-.container {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 25vh;
-
+.animate {
+  position: relative;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
-
-
+.slide-in-left {
+  animation-name: slide-in-left;
+}
+@keyframes slide-in-left {
+  from { left: -130px }
+  to { left: 140px; }
+}
+/* ----  Navbar, Showcase, Logo  END ------ */
 
 
 
@@ -398,6 +367,54 @@ body, html {
     padding: 0 1rem;
   } 
   
+/* Karusell av Jonis */
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 900px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  /* object-fit: contain; */
+  /* margin-left: 10rem; */
+}
+
+#app-text {
+ text-align: center;
+ 
+}
+
+#app-text h1{
+  
+  margin-bottom: 2px;
+}
+
+#app-text p {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  width: 50%;
+
+}
+
+#applications h1 {
+  font-family: 'Roboto Black';
+  font-size: 40px;
+  color: #333333;   } 
+
+
+
   /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
   .downl-app {
     background: url("../img/Bg.svg");
