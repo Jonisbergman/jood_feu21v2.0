@@ -1,0 +1,736 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Roboto'; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
+/* font-family: 'Poppins', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #ffbb00;
+  --bg-primary: #1487fd;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 900px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    /* object-fit: contain; */
+    /* margin-left: 10rem; */
+  }
+
+#app-text {
+   text-align: center;
+   
+}
+
+#app-text h1{
+    
+    margin-bottom: 2px;
+}
+
+#app-text p {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    width: 50%;
+ 
+}
+
+#applications h1 {
+    font-family: 'Roboto Black';
+    font-size: 40px;
+    color: #333333;   } 
+
+
+body,
+html {
+  font-family: "Roboto";
+}
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.slab {
+  font-family: "Roboto-slab", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+P {
+  font-size: 0.9rem;
+}
+
+
+/* features section  Nchombua yvette*/
+
+#features {
+  background-color: #fcfcfc;
+  padding-top: 4rem;
+}
+
+#features .container {
+  background: url(../assets/Repeat\ Grid\ 1.png) no-repeat center;
+  background-size: calc(100% - 20px);
+  max-width: 80%;
+}
+
+
+
+#showcase {
+  /* position: relative; */
+  /* top: auto; */
+  background-image: url(../img/Showcase.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-attachment: sticky;
+  min-width: 1200px;
+}
+
+.top-nav .container, .navbar .container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.navbar {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  margin-left: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+}
+.link.active:hover::after {
+    content: '';
+    border-bottom: 2px solid #FFBB00;
+    position: absolute;
+    left: 1rem;
+    right: 1.9rem;
+    bottom: 0.7rem;
+}
+.link:hover {
+    color: #FFBB00;
+}
+.button-app {
+  padding: 0 2rem;
+  height: 3rem;
+  margin-top: 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  /* outline: none; */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #FFBB00;
+  color: white;
+  margin-left: 5vh;
+}
+.button-app:hover {
+    box-shadow: 3px 3px 15px rgba(51, 51, 51, 0.562), 3px 3px 15px rgba(51, 51, 51, 0.418);
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+.navbar-brand img {
+  height: 3rem;
+}
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Roboto slab';
+  color: #FFBB00;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.showcase-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.showcase-text {
+  width: 50%;
+  margin-bottom: 8vh;
+}
+.showcase-text h1 {
+  font-family: 'Poppins';
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2vh;
+  margin-bottom: 4vh;
+}
+.showcase-text p {
+  font-family: 'Poppins';
+  font-size: 1.6vh;
+  font-weight: normal;
+  width: 80%;
+  letter-spacing: 0.15vh;
+  line-height: 3vh;
+  margin-bottom: 3vh;
+}
+.showcase-content img {
+  margin-right: -2rem;
+  height: 80vh;
+  margin-bottom: 8vh;
+  /* display: block; */
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  margin-bottom: 7vh;
+}
+/* .btn-2 {
+  display: grid;
+} */
+.btn-download-now {
+  margin-right: 1rem;
+  padding: 0.6rem 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+.btn-download-now:hover {
+  border: 2px solid #FFBB00;
+  box-shadow: 3px 6px 10px #FFBB00;
+  text-shadow: 3px 6px 10px #333;
+}
+
+.btn-2 {
+  display: inline-block;
+}
+.btn-watch-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 3rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  }
+/* .btn-watch-video:hover {
+      text-shadow: 6px 6px 15px #000000;
+  } */
+  .ball {
+      display: inline-block;
+      background-color: #FFBB00;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      transform: translate(-35%, -5%);
+      /* margin-bottom: 0.5rem;
+      margin-top: 2rem; */
+      border: none;
+  }
+  #video {
+      height: 20px; 
+      transform: translate(-70%, 65%);
+   }
+  .btn-watch-video:hover .ball {
+      /* background-color: var(--primary-color); */
+  background-color: #FFBB00;
+  width: 45px;
+  height: 45px;
+  left: -7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* border: 3px rgb(150, 40, 40) solid; */
+  outline: 1.5px solid peachpuff;
+  outline-offset: 5px;
+  }
+.btn-watch-video:hover img {
+  display: none;
+}
+.btn-watch-video:hover {
+  font-size: 110%;
+  text-shadow: 3px 6px 10px #333;
+}
+/*SHOWCASE END*/
+
+
+/*LOGO BAR*/
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 0rem;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25vh;
+
+}
+
+
+
+
+
+.text h1 {
+  display: flex;
+  justify-content: left;
+  font-family: roboto;
+  margin-top: 100px;
+}
+
+.text p {
+  display: flex;
+  justify-content: right;
+  font-family: roboto;
+}
+
+.icon-button1 {
+  display: inline-block; 
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+}
+
+.icon-button2 {
+  display: inline-block; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn1 {
+  width: 200px;
+  height: 70px;
+  border-radius: .5rem;
+  background-color: #F8F8F8;
+  color: #2BAAEC;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  padding-right: 8rem;
+}
+
+.btn2 {
+  width: 200px;
+  height: 70px;
+  border-radius: .5rem;
+  background-color: #F8F8F8;
+  color: #2BAAEC;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  padding-right: 8rem;
+}
+
+
+
+
+/* features section  Nchombua yvette*/
+
+#features {
+  background-color: rgb(238, 232, 232);
+}
+
+
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 0 1rem;
+  } 
+  
+  /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
+  .downl-app {
+    background: url("../img/Bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .downl-app h1, .contact-us h1 {
+      font-size: 40px;
+      font-family: 'Roboto' !important;
+  }
+  .downl-app .about-us p {
+    font-family: 'Roboto' !important;
+  }
+  
+  
+  .downl-app .btn {  
+    justify-content:space-between; 
+    width: 14rem;
+    height: 4.5rem;
+    border: 1px transparent;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .downl-app .btn p {
+    font-size: 0.75em;
+    font-family: 'Roboto'!important;
+    font-weight: normal;
+    padding-top: 1rem;  
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  .downl-app .btn span{
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: bold;
+  }
+  .downl-app .content :hover{
+    animation: flipV 1s linear;
+  
+  }
+  .downl-app .image {
+    height: 30px;
+  }
+  .downl-app .phone-container {
+    height: 30rem;
+    width: 33rem;
+    overflow: hidden;
+  }
+  .phone-image {
+    height: 35rem;
+    width: 28rem;
+    margin-left: 3rem;
+   }
+   /* Contact-us start Av Jessica Vakkuri*/
+  #email, #name{
+    background: #FBFBFB;
+    height: 3.5rem;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 10px;
+    }
+  
+  #message {
+    background: #FBFBFB;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 10px;
+  }
+  
+  .contact-us .btn {
+      width: 10rem;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color:#3096FE !important;
+      border: 1px transparent;
+    }
+  /* About-us animation på knapp */
+  @keyframes flipV{
+    100% {
+      transform: rotate(360deg);
+    }
+  }   
+  
+  .rubrik {
+    top: 2%;
+    right: 0%;
+    font-size: 30px;
+    text-align: center;
+  }
+  .rubrik {
+    -webkit-transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+    transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+    display:block;
+    margin-right:0px;
+    letter-spacing: 0;
+  }
+  .rubrik:hover {
+    letter-spacing: 0px;
+    margin-right:20px;
+    letter-spacing: 20px;
+  }
+  .rubrik span{
+     letter-spacing: 0;
+  }
+  /* Contact-us end*/
+  
+  
+  @media (min-width: 578px) {
+    .container {
+      max-width: 530px;
+    }
+    .downl-app .container{
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    .downl-app .row{
+      text-align: center;
+    }
+  }
+  /* media querie between  */
+  
+  @media (min-width: 800px) {
+    .container {
+      max-width: 790px;
+    }
+    
+  }
+   
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.slab {
+  font-family: "Roboto-slab", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+/* features section  Nchombua yvette*/
+
+
+.features-intro button {
+  color: var(--primary-color);
+  background-color: #fff6d9;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.features-intro button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.features-intro h1,
+.features-icons h4 {
+  font-weight: 800;
+}
+
+.features-icons {
+  margin-bottom: 1.2rem;
+}
+
+.features-icons a img {
+  margin-right: 1rem;
+}
+
+.features-icons a img:hover {
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in;
+}
+
+.mobile img {
+  margin-left: -15rem;
+  height: 85%;
+  object-fit: cover;
+  transition: hover 0.8s ease;
+}
+
+.features-intro {
+  margin-right: -6rem;
+}
+
+/* end of features */
+
+/* footer */
+
+.footer-section {
+  background-color: var(--bg-primary);
+}
+
+.footer-title span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translateY(27px);
+  margin-right: 0.5rem;
+}
+
+.footer-title h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 2.5rem;
+  transition: all 0.2s ease-in;
+}
+
+footer ul li :hover {
+  color: var(--primary-color);
+  background-color: #42a0ff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  /* background-color: red;
+  height: 20px; */
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 0.8rem;
+  height: 30px;
+  width: 40px;
+}
+
+.social-media-icons a img {
+  background-color: #42a0ff;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 7px;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  object-fit: contain;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons a img:hover {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+
+.mobile img {
+  margin-left: -6rem;
+}
+
+.features-intro {
+  margin-right: -6rem;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .collapse:not(.show) {
+    display: block;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  a {
+    padding: 0 .3rem;
+  }
+  .top-nav {
+    display: block;
+  }
+  /* .showcase-text {
+    display: block;
+  } */
+
+}
+
+#applications p {
+    font-family: 'Robot Regular' sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+}
