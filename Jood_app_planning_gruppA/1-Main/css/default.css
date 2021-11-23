@@ -541,20 +541,19 @@ body, html {
     .downl-app .row{
       text-align: center;
     }
-  }
-  /* media querie between  */
-  
-  @media (min-width: 800px) {
-    .container {
-      max-width: 790px;
+   
+    .downl-app .phone-image{
+      height: 80%;
     }
-    
   }
+ 
    
   @media (min-width: 992px) {
     .container {
       max-width: 960px;
     }
+    .downl-app .phone-image{
+      height: 115%;
   }
   @media (min-width: 1200px) {
     .container {
