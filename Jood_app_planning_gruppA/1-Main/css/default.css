@@ -332,15 +332,15 @@ P {
 
   
 /* --------- Karusell av Jonis ------------------------ */
-.swiper {
+.mySwiper {
   width: 100%;
-  padding-top: 50px;
-  
+  padding-top: 50px;  
+  height: 730px;
   background-image: url(../img/frame.png);
   background-repeat: no-repeat;
   background-position: center ;
-  background-position-y: 12%;
-  background-size: 350px 710px;
+  background-position-y: 70%;
+  background-size: 330px 676px;
 }
 .swiper-slide {
   background-position: center;
@@ -359,12 +359,14 @@ P {
   width: 100%;
   height: 600px;
   margin-bottom: 15rem;
+  margin-top: 0;
+  padding: 0;
 }
-
-
 
 #app-text {
  text-align: center;
+ margin-bottom: -1rem;
+ margin-top: 10rem;
 }
 
 #app-text h1{
@@ -378,8 +380,9 @@ P {
 }
 #applications h1 {
   font-family: 'Roboto Black';
-  font-size: 40px;
+  font-size: 250%;
   color: #333333;   
+  font-weight: bold;
 }
 #applications p {
   font-family: 'Robot Regular' sans-serif;
@@ -750,12 +753,20 @@ footer ul li :hover {
     margin-right: -1rem;
     font-size: 260%;
   }
+  .hiddenlink {
+    display: none;
+  }
 }
+
 
 @media (max-width: 992px) {
   .container {
     min-width: 80%;
     overflow: hidden;
+  }
+
+  .hiddenlink {
+    display: none;
   }
   /*NAVBAR, SHOWCASE */
   .showcase-content {
@@ -810,6 +821,8 @@ footer ul li :hover {
 }
 
 @media (max-width: 768px) {
+   
+   
   .container {
     min-width: 80%;
   }
@@ -875,6 +888,11 @@ footer ul li :hover {
   .container {
     min-width: 530px;
   }
+
+  #applications .container-apps {
+   margin-bottom: 5rem;
+  }
+
   .downl-app .container{
     text-align: center;
   }
@@ -884,3 +902,4 @@ footer ul li :hover {
     margin-block: 1.8rem;
   }
 }
+
