@@ -41,12 +41,7 @@ P {
   font-size: 0.9rem;
 }
 
-
-
-
-
-
-/* CAROLINE - NAVBAR, SHOWCASE, LOGO */
+/* -----  CAROLINE - NAVBAR, SHOWCASE, LOGO ------------ */
 #showcase {
   background-image: url(../img/Showcase.png);
   background-repeat: no-repeat;
@@ -258,17 +253,22 @@ P {
 /* ----  Navbar, Showcase, Logo  END ------ */
 
 
+/* SIMON - About ---------------------------------------------------- */
+  
+.container-about {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vh;
+}
 
-
-/* SIMON - About */
-.text h1 {
+.text-about h1 {
   display: flex;
   justify-content: left;
   font-family: roboto;
   margin-top: 100px;
 }
 
-.text p {
+.text-about p {
   display: flex;
   justify-content: right;
   font-family: roboto;
@@ -280,7 +280,6 @@ P {
   align-items: center;
   width: 14rem;
 }
-
 .icon-button2 {
   display: inline-block; 
   justify-content: center;
@@ -299,7 +298,6 @@ P {
   font-weight: 600;
   padding-right: 8rem;
 }
-
 .btn2 {
   width: 200px;
   height: 70px;
@@ -311,11 +309,10 @@ P {
   font-weight: 600;
   padding-right: 8rem;
 }
-/* Simons About - END */
+/* Simons About - END ----------------------------------------------*/
 
 
-
-/* features section  Nchombua yvette*/
+/* features section  Nchombua yvette -------------------------------*/
 
 #features {
   background-color: #fcfcfc;
@@ -326,20 +323,25 @@ P {
   background-size: calc(100% - 20px);
   max-width: 80%;
 }
+/* features section  Nchombua yvette*/
 #features {
   background-color: rgb(238, 232, 232);
 }
-  /* Ywette - END */
+/* -------- Ywette - END ---------------------------- */
 
 
   
-/* Karusell av Jonis */
+/* --------- Karusell av Jonis ------------------------ */
 .swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  
+  background-image: url(../img/frame.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-position-y: 12%;
+  background-size: 350px 710px;
 }
-
 .swiper-slide {
   background-position: center;
   background-size: contain;
@@ -353,6 +355,14 @@ P {
   /* margin-left: 10rem; */
 }
 
+#applications .container-apps {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 15rem;
+}
+
+
+
 #app-text {
  text-align: center;
 }
@@ -360,28 +370,32 @@ P {
 #app-text h1{
   margin-bottom: 2px;
 }
-
 #app-text p {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 20px;
   width: 50%;
-
 }
-
 #applications h1 {
   font-family: 'Roboto Black';
   font-size: 40px;
-  color: #333333;   } 
+  color: #333333;   
+}
+#applications p {
+  font-family: 'Robot Regular' sans-serif;
+  font-size: 16px;
+  color: #8A8A8A;
+}
+/* ------- Karusell END -------------------------- */
 
-  /* APPLICATIONS STATISTICS Av Caroline */
+/* ----- APPLICATIONS STATISTICS Av Caroline ------------- */
   .app-statistics {
     height: 500px;
     background-image: url(../img/Layer\ 815.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
   .app-stats-content h1 {
     text-align: center;
@@ -414,10 +428,11 @@ P {
     font-weight: bolder;
     color: #333;
   }
-/* APP STATS End */
+/* ------------- APP STATS End  ---------------- */
 
 
-  /* DOWNLOAD-APPLICATION Av Jessica Vakkuri*/ 
+
+/* ------- DOWNLOAD-APPLICATION Av Jessica Vakkuri ------- */ 
   .downl-app {
     background: url("../img/Bg.svg");
     background-repeat: no-repeat;
@@ -430,8 +445,6 @@ P {
   .downl-app .about-us p {
     font-family: 'Roboto' !important;
   }
-  
-  
   .downl-app .btn {  
     justify-content:space-between; 
     width: 14rem;
@@ -464,17 +477,21 @@ P {
     height: 30px;
   }
   .downl-app .phone-container {
-    height: 30rem;
+    height:30rem;
     width: 33rem;
     overflow: hidden;
   }
-  .phone-image {
-    height: 35rem;
-    width: 28rem;
-    margin-left: 3rem;
+  .downl-app .phone-image {
+    height: 100%;
+    
    }
+
    /* Contact-us start Av Jessica Vakkuri*/
+  .contact-us #email, #name{
+=======
+   /* ------ CONTACT US Av Jessica Vakkuri ------------ */
   #email, #name{
+
     background: #FBFBFB;
     height: 3.5rem;
     font-size: 16px;
@@ -482,7 +499,7 @@ P {
     border-radius: 10px;
     }
   
-  #message {
+  .contact-us #message {
     background: #FBFBFB;
     font-size: 16px;
     border: transparent;
@@ -503,31 +520,91 @@ P {
     }
   }   
   
-  .rubrik {
+   .contact-us .rubrik {
     top: 2%;
     right: 0%;
     font-size: 30px;
     text-align: center;
-  }
-  .rubrik {
     -webkit-transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
     transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
     display:block;
     margin-right:0px;
     letter-spacing: 0;
   }
-  .rubrik:hover {
+  .contact-us .rubrik:hover {
     letter-spacing: 0px;
     margin-right:20px;
     letter-spacing: 20px;
   }
-  .rubrik span{
+  .contact-us .rubrik span{
      letter-spacing: 0;
   }
-  /* Contact-us end*/
 
+  /* Contact-us end*/
+  
+  
+  @media (min-width: 578px) {
+    .container {
+      max-width: 530px;
+    }
+    .downl-app .container{
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    .downl-app .content{
+      margin-left: 3rem;
+    }
+   
+    .downl-app .phone-image{
+      height: 75%;
+      margin-left: 3rem;
+    }
+  }
+ 
+   
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    .downl-app .content{
+      margin-left: auto;
+    }
+    .downl-app .phone-image{
+      height: 115%;
+      
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.slab {
+  font-family: "Roboto-slab", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
 
 /* features section  Nchombua yvette*/
+
+=======
+/* ------------ Contact-us end -------------------- */
+   
+
+
+/* -------- Features section  Nchombua yvette -------------- */
 .features-intro button {
   color: var(--primary-color);
   background-color: #fff6d9;
@@ -535,13 +612,11 @@ P {
   font-size: 1.2rem;
   font-weight: 800;
 }
-
 .features-intro button:hover {
   background-color: var(--primary-color);
   color: #fff;
   transition: all 0.1s ease-in;
 }
-
 .features-intro h1,
 .features-icons h4 {
   font-weight: 800;
@@ -550,36 +625,31 @@ P {
 .features-icons {
   margin-bottom: 1.2rem;
 }
-
 .features-icons a img {
   margin-right: 1rem;
 }
-
 .features-icons a img:hover {
   background-color: var(--bg-primary);
   border-radius: 50%;
   transform: translateY(5px);
   transition: all 0.2s ease-in;
 }
-
 .mobile img {
   margin-left: -15rem;
   height: 85%;
   object-fit: cover;
   transition: hover 0.8s ease;
 }
-
 .features-intro {
   margin-right: -6rem;
 }
-/* ----------- END of features ------------- */
+/* -------------- End of features ------------------ */
 
-/* ---------- Footer ------------- */
+/* --------------- Footer -------------- */
 
 .footer-section {
   background-color: var(--bg-primary);
 }
-
 .footer-title span {
   height: 10px;
   width: 10px;
@@ -588,7 +658,6 @@ P {
   transform: translateY(27px);
   margin-right: 0.5rem;
 }
-
 .footer-title h1 {
   text-transform: uppercase;
   color: #fff;
@@ -623,7 +692,6 @@ footer ul li :hover {
   display: flex;
   justify-content: center;
   align-content: center;
-
   /* background-color: red;
   height: 20px; */
 }
@@ -652,7 +720,6 @@ footer ul li :hover {
   border-radius: 50%;
 }
 
-
 .mobile img {
   margin-left: -6rem;
 }
@@ -665,38 +732,158 @@ footer ul li :hover {
 
 
 
+/* ------------ MEDIA QUERIES ----------------- */
 
-/* ---------- MEDIA QUERIES -------------- */
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    min-width: 80%;
+  }
+  .link {
+    font-size: 95%;
+    letter-spacing: 0.09vh;
+    padding: 1rem;
+  }
+  #showcase {
+    background-size: 165%;
+  }
+  .showcase-text h1 {
+    margin-right: -1rem;
+    font-size: 260%;
   }
 }
-
-@media (min-width: 768px) {
-  .navbar-toggler {
-    display: none;
+/* -----------------------------992-------------*/
+@media (max-width: 992px) {
+  .container {
+    min-width: 80%;
+    overflow: hidden;
   }
-  .collapse:not(.show) {
-    display: block;
+  /*NAVBAR, SHOWCASE */
+  .showcase-content {
+    margin-right: auto;
+    margin-left: auto;
   }
-  .navbar-nav {
+  .link {
     flex-direction: row;
+    font-size: 75%;
+    padding: 0.6rem;
+  }
+  .navbar {
+    padding-left: 0rem;
+    margin-left: 0rem;
   }
   .navbar-brand a {
     padding: 0 .3rem;
   }
+  .button-app {
+    padding: 0 1.2rem;
+    font-size: 75%;
+    height: 30px;
+  }
   .top-nav {
     display: block;
   }
-  /* .showcase-text {
-    display: block;
-  } */
-
+  .showcase-text {
+    margin-left: -1rem;
+    padding-bottom: 1.5rem;
+  }
+  .showcase-text h1 {
+    font-size: 270%;
+    width: 100%;
+    letter-spacing: 0.15vh;
+    line-height: 7vh;
+  }
+  /*LOGO*/
+  .logo4 {
+    display: none;
+  }
+  /*APPLICATION STATISTICS*/
+  .statistic-text h2 {
+    font-size: 33px;
+  }
+  .statistic-text h4 {
+    font-size: 15px;
+  }
 }
 
-#applications p {
-    font-family: 'Robot Regular' sans-serif;
-    font-size: 16px;
-    color: #8A8A8A;
+@media (max-width: 768px) {
+  .container {
+    min-width: 80%;
+  }
+  #showcase {
+    background-image: url(../img/bluebg.png);
+    background-position-y: top;
+    background-position-x: center;
+    background-attachment: sticky;
+    background-size: 200%;
+  }
+  .button-app {
+    width: 23%;
+    font-size: 85%;
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+  }
+  .showcase-content {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showcase-text {
+    margin-left: 0rem;
+    display: block;
+    width: 100%;
+  }
+  .showcase-text h1 {
+    font-size: 250%;
+    width: 100%;
+  }
+  .showcase-text p {
+    width: 100%;
+  }
+  .showcase-text .col-7 .pt-5 {
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons {
+    justify-content: center;
+    margin-bottom: 0rem;
+  }
+  .btn-watch-video {
+  padding: 0rem 1.5rem;
+  height: 2.5rem;
+  border: 1.8px solid #ffbb00;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--primary-color);
+  margin-left: 1rem;
+  }
+  .btn-watch-video:hover {
+    border: 1.8px solid #FFBB00;
+    box-shadow: 3px 6px 10px #FFBB00;
+    text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
+    transform: rotateZ(-355deg)
+  }
+  /*LOGO*/
+  .logo3 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    min-width: 530px;
+  }
+  .downl-app .container{
+    text-align: center;
+  }
+  .app-statistics {
+    height: auto;
+    background-size: 90%;
+    margin-block: 1.8rem;
+  }
 }
