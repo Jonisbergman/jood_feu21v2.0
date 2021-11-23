@@ -713,6 +713,12 @@ footer ul li :hover {
     margin-left: -1rem;
     padding-bottom: 1.5rem;
   }
+  .showcase-text h1 {
+    font-size: 270%;
+    width: 100%;
+    letter-spacing: 0.15vh;
+    line-height: 7vh;
+  }
   /*LOGO*/
   .logo4 {
     display: none;
@@ -792,11 +798,12 @@ footer ul li :hover {
   .container {
     min-width: 530px;
   }
-  #showcase {
-    /* background-image: none;
-    background-color: #1488fdcb; */
-  }
   .downl-app .container{
     text-align: center;
+  }
+  .app-statistics {
+    height: auto;
+    background-size: 90%;
+    margin-block: 1.8rem;
   }
 }
