@@ -686,18 +686,6 @@ footer ul li :hover {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 530px;
-  }
-  .downl-app .container{
-    text-align: center;
-  }
-}
-
-
-
-
 @media (max-width: 1200px) {
   .container {
     min-width: 80%;
@@ -772,7 +760,7 @@ footer ul li :hover {
     min-width: 80%;
   }
   #showcase {
-    background-image: url(img/bluebg.png);
+    background-image: url(../img/bluebg.png);
     background-position-y: top;
     background-position-x: center;
     background-attachment: sticky;
