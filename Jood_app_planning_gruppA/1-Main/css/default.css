@@ -535,13 +535,15 @@ body, html {
     .container {
       max-width: 720px;
     }
-    .downl-app .content{
-      margin-left: 3rem;
+    .downl-app .container{
+     padding-top: 2rem;
+     padding-bottom: 2rem;
     }
    
     .downl-app .phone-image{
-      height: 75%;
-      margin-left: 3rem;
+      height: 85%;
+      
+      
     }
   }
  
