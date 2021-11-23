@@ -754,7 +754,6 @@ footer ul li :hover {
 @media (max-width: 992px) {
   .container {
     min-width: 80%;
-    overflow: hidden;
   }
   /*NAVBAR, SHOWCASE */
   .showcase-content {
@@ -792,6 +791,9 @@ footer ul li :hover {
     line-height: 7vh;
   }
   /*LOGO*/
+  .logo {
+    overflow: hidden;
+  }
   .logo4 {
     display: none;
   }
