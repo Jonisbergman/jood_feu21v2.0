@@ -126,15 +126,15 @@ P {
 }
 .showcase-text h1 {
   font-family: 'Poppins';
-  font-size: 300%;
+  font-size: 340%;
   font-weight: bold;
-  width: 95%;
+  width: 98%;
   letter-spacing: 0.15vh;
   line-height: 9vh;
 }
 .showcase-text p {
   font-family: 'Poppins';
-  font-size: 1.5vh;
+  font-size: 1.7vh;
   width: 70%;
   letter-spacing: 0.1vh;
   line-height: 4vh;
@@ -145,7 +145,6 @@ P {
   margin-top: -3rem;
   margin-left: -3rem;
 }
-
 .ball img {
   margin-right: -2rem;
   margin-bottom: 0.4rem;
@@ -764,8 +763,8 @@ footer ul li :hover {
   }
   .link {
     flex-direction: row;
-    font-size: 75%;
-    padding: 0.6rem;
+    font-size: 60%;
+    padding: 0.2rem;
   }
   .navbar {
     padding-left: 0rem;
@@ -804,7 +803,7 @@ footer ul li :hover {
     font-size: 15px;
   }
 }
-
+/* ---------------------------768----------------*/
 @media (max-width: 768px) {
   .container {
     min-width: 80%;
@@ -873,6 +872,7 @@ footer ul li :hover {
     display: none;
   }
 }
+/*------------------------------------567----------------------*/
 
 @media (max-width: 576px) {
   .container {
