@@ -17,59 +17,63 @@
  </head> 
  <body> 
 
-    <!-- NAVBAR, SHOWCASE OCH LOGO-BAR AV CAROLINE---------------------------------------------------------------------------------------------------------->
+   <!-- NAVBAR, SHOWCASE OCH LOGO-BAR AV CAROLINE---------------------------------------------------------------------------------------------------------->
 
-    <section id="showcase">
-      <div class="container">
-          <nav class="navbar navbar-expand-md navbar-dark">
-              <div class="container">
-                <a class="navbar-brand animate__animated animate__rubberBand" href="#"><img src="img/logo.png" alt="logotype"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="link active" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="link active" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="link active" href="#">Screens</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="link active" href="#">Contact Us</a>
-                    </li>
-                    <button class="button-app">Get the app</button>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-  
-          <div class="container showcase-content row">
-              <div class="showcase-text col-7 pt-5 d-flex flex-column">
-                <h1>Creative Way to Showcase Your App</h1>
-                <p>Lorem Ipsum is simply dummy text to the printing and typesetting industry Lorem Ipsum is simply</p>
-                  <div class="buttons ">
-                      <button class="btn-download-now">Download Now</button>
-                      <button class="btn-watch-video"><div class="ball"><img id="video" src="img/play.png"></div>Watch Video</button>
-                  </div>
-              </div>
-              
-              <div class="mobiler col-5 pt-5 d-md-block d-none"><img src="img/mobiler.png" alt=""></div>
-  
-          </div>
-      </div>
-  </section>
-    
+   <section id="showcase">
     <div class="container">
-        <div class="logo animate__animated animate__rubberBand"><img src="img/ec-logo-mono.png" alt=""><img src="img/ec-logo-mono.png" alt=""><img src="img/ec-logo-mono.png" alt=""><img src="img/ec-logo-mono.png" alt=""></div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+              <a class="navbar-brand animate__animated animate__rubberBand" href="#"><img src="img/logo.png" alt="logotype"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Screens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="link active" href="#">Contact Us</a>
+                  </li>
+                  <button class="button-app">Get the app</button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container showcase-content row">
+            <div class="showcase-text col-7 pt-5 d-md-flex flex-md-column">
+              <h1>Creative Way to Showcase Your App</h1>
+              <p>Lorem Ipsum is simply dummy text to the printing and typesetting industry Lorem Ipsum is simply</p>
+                <div class="buttons ">
+                    <button class="btn-download-now">Download Now</button>
+                    <button class="btn-watch-video"><div class="ball d-md-block d-none"><img id="video" src="img/play.png"></div>Watch Video</button>
+                </div>
+            </div>
+            
+            <div class="mobiler col-5 pt-5 d-md-block d-none"><img src="img/mobiler.png" alt=""></div>
+
+        </div>
     </div>
- 
+</section>
+  
+  <div class="container">
+      <div class="logo d-flex animate__animated animate__rubberBand animate slide-in-left">
+        <a href="https://ecutbildning.se/"><img class="logo1" src="img/ec-logo-mono.png"></a>
+        <a href="https://ecutbildning.se/"><img class="logo2" src="img/ec-logo-mono.png"></a>
+        <a href="https://ecutbildning.se/"><img class="logo3" src="img/ec-logo-mono.png"></a>
+        <a href="https://ecutbildning.se/"><img class="logo4" src="img/ec-logo-mono.png"></a>
+      </div>
+    </div>
     <!-- END -------------------------------------------------------------------------------------------------------------------- -->
          <!-- ABOUT // Simon Habchi   ---------------------------------------------------------------------------------------------->
 
@@ -150,32 +154,36 @@
   </div>
 </div>
 </section>
-
+ <!-- -------- APPLICATIONS STATISTICS Av Caroline ------------------- -->
 <section id="app-stats">
   <div class="container app-statistics">
       <br>
-      <div class="app-stats-rubrik"><h1>Application Statistics</h1></div>
-          <div class="app-stats-text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p></div>
+      <div class="app-stats-content">
+         <h1>Application Statistics</h1>
+         <p class="app-stats-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+         <p class="app-stats-text">Lorem Ipsum has been the industry's</p>
+      </div>
+ 
       <div class="app-stats-cards d-flex row">
-          <div class="col">
+          <div class="statistic-text col-md-3 col-sm-6">
               <h2>+ 1430</h2>
-              <p>Clients</p>
+              <h4>Clients</h4>
           </div>
-          <div class="col">
-              <h2>+ 1430</h2>
-              <p>Clients</p>
+          <div class="statistic-text col-md-3 col-sm-6">
+              <h2>+ 2430</h2>
+              <h4>Beneficiaries</h4>
           </div>
-          <div class="col">
+          <div class="statistic-text col-md-3 col-sm-6">
               <h2>+ 1430</h2>
-              <p>Clients</p>
+              <h4>Positive reviews</h4>
           </div>
-          <div class="col">
-              <h2>+ 1430</h2>
-              <p>Clients</p>
+          <div class="statistic-text col-md-3 col-sm-6">
+              <h2>+ 10.430</h2>
+              <h4>Downloads</h4>
           </div>
       </div>
   </div>
-</section>
+ </section>
 
 <!-- Applications END ------------------------------------------------------------------------------------------------------------------------>
 
