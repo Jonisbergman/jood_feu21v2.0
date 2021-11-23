@@ -18,3 +18,6 @@ var swiper = new Swiper(".mySwiper", {
     slideShadows: false,
   },
 });
+
+
+AOS.init();
