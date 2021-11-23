@@ -332,15 +332,15 @@ P {
 
   
 /* --------- Karusell av Jonis ------------------------ */
-.swiper {
+.mySwiper {
   width: 100%;
-  padding-top: 50px;
-  
+  padding-top: 50px;  
+  height: 730px;
   background-image: url(../img/frame.png);
   background-repeat: no-repeat;
   background-position: center ;
-  background-position-y: 12%;
-  background-size: 350px 710px;
+  background-position-y: 70%;
+  background-size: 330px 676px;
 }
 .swiper-slide {
   background-position: center;
@@ -359,12 +359,14 @@ P {
   width: 100%;
   height: 600px;
   margin-bottom: 15rem;
+  margin-top: 0;
+  padding: 0;
 }
-
-
 
 #app-text {
  text-align: center;
+ margin-bottom: -1rem;
+ margin-top: 10rem;
 }
 
 #app-text h1{
@@ -378,8 +380,9 @@ P {
 }
 #applications h1 {
   font-family: 'Roboto Black';
-  font-size: 40px;
+  font-size: 250%;
   color: #333333;   
+  font-weight: bold;
 }
 #applications p {
   font-family: 'Robot Regular' sans-serif;
@@ -477,21 +480,16 @@ P {
     height: 30px;
   }
   .downl-app .phone-container {
-    height:30rem;
+    height: 30rem;
     width: 33rem;
     overflow: hidden;
   }
   .downl-app .phone-image {
     height: 100%;
-    
    }
 
-   /* Contact-us start Av Jessica Vakkuri*/
-  .contact-us #email, #name{
-=======
-   /* ------ CONTACT US Av Jessica Vakkuri ------------ */
-  #email, #name{
-
+   /* ------ CONTACT US start Av Jessica Vakkuri----------*/
+   .contact-us #email, #name{
     background: #FBFBFB;
     height: 3.5rem;
     font-size: 16px;
@@ -539,67 +537,7 @@ P {
   .contact-us .rubrik span{
      letter-spacing: 0;
   }
-
-  /* Contact-us end*/
   
-  
-  @media (min-width: 578px) {
-    .container {
-      max-width: 530px;
-    }
-    .downl-app .container{
-      text-align: center;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-    .downl-app .content{
-      margin-left: 3rem;
-    }
-   
-    .downl-app .phone-image{
-      height: 75%;
-      margin-left: 3rem;
-    }
-  }
- 
-   
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-    .downl-app .content{
-      margin-left: auto;
-    }
-    .downl-app .phone-image{
-      height: 115%;
-      
-  }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-
-
-.roboto {
-  font-family: "Roboto";
-}
-
-.slab {
-  font-family: "Roboto-slab", sans-serif;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-/* features section  Nchombua yvette*/
-
-=======
 /* ------------ Contact-us end -------------------- */
    
 
@@ -727,7 +665,7 @@ footer ul li :hover {
 .features-intro {
   margin-right: -6rem;
 }
-
+ /* ---------- FOOTER END ---------  */
 
 
 
@@ -752,10 +690,10 @@ footer ul li :hover {
   }
 }
 /* -----------------------------992-------------*/
+
 @media (max-width: 992px) {
   .container {
     min-width: 80%;
-    overflow: hidden;
   }
   /*NAVBAR, SHOWCASE */
   .showcase-content {
@@ -803,8 +741,14 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
+  /* DOWNLOAD APP */
+  .downl-app .content{
+    margin-left: auto;
+  }
+  .downl-app .phone-image{
+    height: 115%;
 }
-
+ /* ---------------------------------768 ------------------------- */
 @media (max-width: 768px) {
   .container {
     min-width: 80%;
@@ -812,9 +756,7 @@ footer ul li :hover {
   #showcase {
     background-image: url(../img/bluebg.png);
     background-position-y: top;
-    background-position-x: center;
-    background-attachment: sticky;
-    background-size: 200%;
+    background-size: auto;
   }
   .button-app {
     width: 23%;
@@ -851,16 +793,16 @@ footer ul li :hover {
     margin-bottom: 0rem;
   }
   .btn-watch-video {
-  padding: 0rem 1.5rem;
-  height: 2.5rem;
-  border: 1.8px solid #ffbb00;
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  background-color: transparent;
-  color: var(--primary-color);
-  margin-left: 1rem;
+    padding: 0rem 1.5rem;
+    height: 2.5rem;
+    border: 1.8px solid #ffbb00;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin-left: 1rem;
   }
   .btn-watch-video:hover {
     border: 1.8px solid #FFBB00;
@@ -872,18 +814,35 @@ footer ul li :hover {
   .logo3 {
     display: none;
   }
+  /* DOWNLOAD APP  */
+  .downl-app .container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+  
+   .downl-app .phone-image{
+     height: 85%;
+   }
 }
-
+ /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
   .container {
     min-width: 530px;
   }
-  .downl-app .container{
-    text-align: center;
+
+  #applications .container-apps {
+   margin-bottom: 5rem;
   }
   .app-statistics {
     height: auto;
     background-size: 90%;
     margin-block: 1.8rem;
   }
+
+  /* DOWNLOAD APP  */
+  .downl-app .container{
+    text-align: center;
+  }
 }
+
+
