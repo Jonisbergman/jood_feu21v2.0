@@ -47,33 +47,30 @@ P {
 
 
 /* CAROLINE - NAVBAR, SHOWCASE, LOGO */
-
 #showcase {
-  /* position: relative; */
-  /* top: auto; */
   background-image: url(../img/Showcase.png);
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 130%;
   background-position-y: bottom;
   background-position-x: center;
   background-attachment: sticky;
-  min-width: 1150px;
+  overflow: hidden;
 }
 
 .navbar {
-  padding: 2rem 1rem;
-  /* display: flex;
+  padding-block: 2rem;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
 }
 .link {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.7vh;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 95%;
   letter-spacing: 0.11vh;
   color: white;
-  /* margin-left: -0.1rem; */
-  padding: 1rem;
+  padding: 1.1rem;
   display: inline-block;
   position: relative;
 }
@@ -94,18 +91,16 @@ P {
   margin-top: 0.35rem;
   border: 1px solid transparent;
   border-radius: 10px;
-  /* outline: none; */
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.6vh;
+  font-size: 90%;
   background-color: #FFBB00;
   color: white;
-  margin-left: 5vh;
+  margin-left: 3vh;
 }
 .button-app:hover {
     box-shadow: 3px 3px 15px rgba(51, 51, 51, 0.562), 3px 3px 15px rgba(51, 51, 51, 0.418);
 }
-
 .collapse:not(.show) {
   display: none;
 }
@@ -127,53 +122,48 @@ P {
 }
 .showcase-content {
   color: white;
-  /* margin-left: 2rem; */
   margin-bottom: 2rem;
 }
 .showcase-text {
-  /* width: 50%; */
-  margin-bottom: 20%;
+  margin-left: -0.5rem;
+  justify-content: center;
+  margin-bottom: 10%;
 }
 .showcase-text h1 {
   font-family: 'Poppins';
-  font-size: 3rem;
+  font-size: 300%;
   font-weight: bold;
-  letter-spacing: 0.1vh;
-  margin-bottom: 4vh;
+  width: 95%;
+  letter-spacing: 0.15vh;
+  line-height: 9vh;
 }
 .showcase-text p {
   font-family: 'Poppins';
   font-size: 1.5vh;
-  /* width: 80%; */
+  width: 70%;
   letter-spacing: 0.1vh;
-  line-height: 3vh;
-  /* margin-bottom: 1vh; */
+  line-height: 4vh;
+  margin-top: 5%;
 }
 .mobiler img {
-  /* height: 40rem; */
-  width: 115%;
-  margin-top: -2rem;
-  /* display: block; */
+  width: 130%;
+  margin-top: -3rem;
+  margin-left: -3rem;
 }
 
 .ball img {
   margin-right: -2rem;
   margin-bottom: 0.4rem;
 }
-
 .buttons {
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
   height: max-content;
+  margin-top: 5%;
   margin-bottom: 7vh;
 }
-/* .btn-2 {
-  display: grid;
-} */
 .btn-download-now {
   margin-right: 0.2rem;
-  /* margin-top: 0.3rem; */
   padding: 0rem 1.5rem;
   height: 2.5rem;
   border: 1.8px solid white;
@@ -193,7 +183,6 @@ P {
   text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
   transform: rotateZ(5deg)
 }
-
 .btn-2 {
   display: inline-block;
 }
@@ -211,26 +200,20 @@ P {
   background-color: transparent;
   color: white;
   }
-/* .btn-watch-video:hover {
-      text-shadow: 6px 6px 15px #000000;
-  } */
   .ball {
-      display: inline-block;
-      background-color: #FFBB00;
-      height: 35px;
-      width: 35px;
-      border-radius: 50%;
-      transform: translate(-35%, -5%);
-      /* margin-bottom: 0.5rem;
-      margin-top: 2rem; */
-      border: none;
+    display: inline-block;
+    background-color: #FFBB00;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    transform: translate(-35%, -5%);
+    border: none;
   }
   #video {
       height: 13px; 
       transform: translate(-115%, 68%);
    }
   .btn-watch-video:hover .ball {
-      /* background-color: var(--primary-color); */
   background-color: #FFBB00;
   width: 30px;
   height: 30px;
@@ -239,12 +222,10 @@ P {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* border: 3px rgb(150, 40, 40) solid; */
   outline: 1.5px solid peachpuff;
   outline-offset: 5px;
   }
 .btn-watch-video:hover img {
-  /* display: none; */
   margin-bottom: 0.99rem;
 }
 .btn-watch-video:hover {
@@ -256,25 +237,23 @@ P {
 
 /*LOGO BAR*/
 .logo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   margin: 5rem 0rem;
   overflow: hidden;
 }
 .animate {
   position: relative;
-  animation-duration: 10s;
+  animation-duration: 8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .slide-in-left {
   animation-name: slide-in-left;
 }
 @keyframes slide-in-left {
-  from { left: -130px }
-  to { left: 140px; }
+  from { left: -10px }
+  to { left: 90px; }
 }
 /* ----  Navbar, Showcase, Logo  END ------ */
 
@@ -342,23 +321,14 @@ P {
   background-color: #fcfcfc;
   padding-top: 4rem;
 }
-
 #features .container {
   background: url(../assets/Repeat\ Grid\ 1.png) no-repeat center;
   background-size: calc(100% - 20px);
   max-width: 80%;
 }
-/* features section  Nchombua yvette*/
-
 #features {
   background-color: rgb(238, 232, 232);
 }
-
-/* .container {
-    width: 80%;
-    margin: auto;
-    padding: 0 1rem;
-  }  */
   /* Ywette - END */
 
 
@@ -376,7 +346,6 @@ P {
   width: 300px;
   height: 900px;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -386,11 +355,9 @@ P {
 
 #app-text {
  text-align: center;
- 
 }
 
 #app-text h1{
-  
   margin-bottom: 2px;
 }
 
@@ -408,36 +375,45 @@ P {
   color: #333333;   } 
 
   /* APPLICATIONS STATISTICS Av Caroline */
-.app-statistics {
-  height: 500px;
-  background-image: url(../img/Layer\ 815.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: auto;
-  /* background-attachment: scroll; */
-}
-.app-stats-rubrik h1 {
-  text-align: center;
-  font-family: 'Roboto Black';
-  font-size: 40px;
-  color: #333333;
-}
-.app-stats-text {
-  max-width: 30rem;
-  padding-top: 3.5rem;
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 20px;
-  width: 50%;
-}
-.app-stats-text h2 {
-  
-}
-
-.app-stats-cards {
-  display: ;
-}
+  .app-statistics {
+    height: 500px;
+    background-image: url(../img/Layer\ 815.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    margin-top: 1rem;
+  }
+  .app-stats-content h1 {
+    text-align: center;
+    font-family: 'Roboto Black';
+    font-size: 250%;
+    color: #333333;
+    padding-top: 5.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .app-stats-text {
+    text-align: center;
+  }
+  #app-stats p {
+    font-family: 'Robot Regular' sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+    margin-bottom: 0.2rem;
+  }
+  .statistic-text h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--bg-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .statistic-text h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333;
+  }
 /* APP STATS End */
 
 
@@ -549,61 +525,9 @@ P {
      letter-spacing: 0;
   }
   /* Contact-us end*/
-  
-  
-  @media (min-width: 578px) {
-    .container {
-      max-width: 530px;
-    }
-    .downl-app .container{
-      text-align: center;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
-    .downl-app .row{
-      text-align: center;
-    }
-  }
-  /* media querie between  */
-  
-  @media (min-width: 800px) {
-    .container {
-      max-width: 790px;
-    }
-    
-  }
-   
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
 
-
-.roboto {
-  font-family: "Roboto";
-}
-
-.slab {
-  font-family: "Roboto-slab", sans-serif;
-}
-
-.poppins {
-  font-family: "Poppins", sans-serif;
-}
 
 /* features section  Nchombua yvette*/
-
-
 .features-intro button {
   color: var(--primary-color);
   background-color: #fff6d9;
@@ -648,10 +572,9 @@ P {
 .features-intro {
   margin-right: -6rem;
 }
+/* ----------- END of features ------------- */
 
-/* end of features */
-
-/* footer */
+/* ---------- Footer ------------- */
 
 .footer-section {
   background-color: var(--bg-primary);
@@ -743,7 +666,7 @@ footer ul li :hover {
 
 
 
-/* MEDIA QUERIES */
+/* ---------- MEDIA QUERIES -------------- */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
