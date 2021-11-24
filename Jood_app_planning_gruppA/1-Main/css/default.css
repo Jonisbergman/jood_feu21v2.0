@@ -270,15 +270,32 @@ P {
   margin-top: 100px;
 }
 
+.about-button {
+  padding-top: 5rem;
+}
+
+.a-intro {
+  color: var(--primary-color);
+  background-color: #fff6d9;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  padding: .4rem;
+  width: 30%;
+  font-family: roboto;
+}
+
+.a-intro:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
 .text-about p {
   display: flex;
   justify-content: right;
   font-family: roboto;
-}
-
-.about-btn {
-  display: flex;
-  justify-content: right;
 }
 
 .icon-button1 {
