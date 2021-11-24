@@ -276,28 +276,57 @@ P {
   font-family: roboto;
 }
 
+.about-btn {
+  display: flex;
+  justify-content: right;
+}
+
 .icon-button1 {
-  display: inline-block; 
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   width: 14rem;
 }
+
+.btn1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+  border-radius: .5rem;
+  background-color: #F8F8F8;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+.btn1 p {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-weight: lighter;
+  font-family: bold;
+  text-align: center;
+  color: #6B6B6B;
+  font-family: bold;
+}
+
+.btn1 p span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: .5rem;
+  color:#111111;
+  font-family: roboto;
+}
+
 .icon-button2 {
   display: inline-block; 
   margin-top: 20px;
 }
 
-.btn1 {
-  width: 200px;
-  height: 70px;
-  border-radius: .5rem;
-  background-color: #F8F8F8;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-weight: 600;
-  padding-right: 8rem;
-}
 .btn2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 200px;
   height: 70px;
   border-radius: .5rem;
@@ -305,7 +334,26 @@ P {
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
-  padding-right: 8rem;
+  padding-right: 2rem;
+}
+
+
+.btn2 p {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-weight: lighter;
+  font-family: bold;
+  text-align: center;
+  color: #6B6B6B;
+  font-family: bold;
+}
+
+.bt2 p span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: .5rem;
+  color:#111111;
+  font-family: roboto;
 }
 /* Simons About - END ----------------------------------------------*/
 
