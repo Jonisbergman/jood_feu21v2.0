@@ -284,8 +284,6 @@ P {
 }
 .icon-button2 {
   display: inline-block; 
-  justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -294,7 +292,6 @@ P {
   height: 70px;
   border-radius: .5rem;
   background-color: #F8F8F8;
-  color: #2BAAEC;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
@@ -305,7 +302,6 @@ P {
   height: 70px;
   border-radius: .5rem;
   background-color: #F8F8F8;
-  color: #2BAAEC;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
