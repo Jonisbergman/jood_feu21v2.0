@@ -319,6 +319,7 @@ P {
   border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 800;
+  border: none;
 }
 
 .features-intro button:hover {
@@ -966,6 +967,7 @@ footer ul li :hover {
     margin-right: auto;
   }
   .buttons {
+
     justify-content: center;
     margin-bottom: 0rem;
   }
