@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 /* font-family: 'Roboto'; */
@@ -311,6 +312,8 @@ P {
 /* Simons About - END ----------------------------------------------*/
 
 
+
+
 /* features section  Nchombua yvette -------------------------------*/
 
 #features {
@@ -325,10 +328,134 @@ P {
 /* features section  Nchombua yvette*/
 #features {
   background-color: rgb(238, 232, 232);
+
+.features-intro button {
+  color: var(--primary-color);
+  background-color: #fff6d9;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
 }
+
+.features-intro button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.features-intro h1,
+.features-icons h4 {
+  font-weight: 800;
+}
+
+.features-icons {
+  margin-bottom: 1.2rem;
+
+}
+  
+  
+.features-icons a img:hover {
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in;
+}  
+  
+  
 /* -------- Ywette - END ---------------------------- */
 
+.features-icons a img {
+  margin-right: 1rem;
+}
+  
+.mobile img {
+  margin-left: -15rem;
+  height: 85%;
+  object-fit: cover;
+  transition: hover 0.8s ease;
+}
 
+.features-intro {
+  margin-right: -6rem;
+}
+
+/* end of features ---------------------------------------------------------------------------------------*/
+
+/* footer Yvette-------------------------------------------------------------------------------------- */
+
+.footer-section {
+  background-color: var(--bg-primary);
+}
+
+.footer-title span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translateY(27px);
+  margin-right: 0.5rem;
+}
+
+.footer-title h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 2.5rem;
+  transition: all 0.2s ease-in;
+}
+
+footer ul li :hover {
+  color: var(--primary-color);
+  background-color: #42a0ff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 0.8rem;
+  height: 30px;
+  width: 40px;
+}
+
+.social-media-icons a img {
+  background-color: #42a0ff;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 7px;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  object-fit: contain;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icons a img:hover {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
   
 /* --------- Karusell av Jonis ------------------------ */
 .mySwiper {
@@ -341,6 +468,7 @@ P {
   background-position-y: 70%;
   background-size: 330px 676px;
 }
+
 .swiper-slide {
   background-position: center;
   background-size: contain;
@@ -390,6 +518,7 @@ P {
 }
 /* ------- Karusell END -------------------------- */
 
+
 /* ----- APPLICATIONS STATISTICS Av Caroline ------------- */
   .app-statistics {
     height: 500px;
@@ -433,18 +562,54 @@ P {
 /* ------------- APP STATS End  ---------------- */
 
 
+/* ----- APPLICATIONS STATISTICS Av Caroline ------------- */
+  .app-statistics {
+    height: 500px;
+    background-image: url(../img/Layer\ 815.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    margin-top: 0rem;
+  }
+  .app-stats-content h1 {
+    text-align: center;
+    font-family: 'Roboto Black';
+    font-size: 250%;
+    color: #333333;
+    padding-top: 5.5rem;
+    padding-bottom: 0.8rem;
+  }
+  .app-stats-text {
+    text-align: center;
+  }
+  #app-stats p {
+    font-family: 'Robot Regular' sans-serif;
+    font-size: 16px;
+    color: #8A8A8A;
+    margin-bottom: 0.2rem;
+  }
+  .statistic-text h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--bg-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .statistic-text h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333;
+  }
+/* ------------- APP STATS End  ---------------- */
 
 /* ------- DOWNLOAD-APPLICATION Av Jessica Vakkuri ------- */ 
-  .downl-app {
+ .downl-app {
     background: url("../img/Bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .downl-app .all-content {
-     margin-right: auto;
-      margin-left: auto;
-    }  
- 
   .downl-app h1, .contact-us h1 {
       font-size: 40px;
       font-family: 'Roboto' !important;
@@ -481,16 +646,17 @@ P {
   
   }
   .downl-app .image {
-    height: 100%;
+    height: 30px;
   }
   .downl-app .phone-container {
-    height: 40rem;
+    height: 30rem;
+    width: 33rem;
     overflow: hidden;
   }
   .downl-app .phone-image {
-    height: 120%;
-    width: 100%;
+    height: 100%;
    }
+   
 
    /* ------ CONTACT US start Av Jessica Vakkuri----------*/
    .contact-us #email, #name{
@@ -543,8 +709,6 @@ P {
   }
   
 /* ------------ Contact-us end -------------------- */
-   
-
 
 /* -------- Features section  Nchombua yvette -------------- */
 .features-intro button {
@@ -671,9 +835,6 @@ footer ul li :hover {
 }
  /* ---------- FOOTER END ---------  */
 
-
-
-
 /* ------------ MEDIA QUERIES ----------------- */
 
 @media (max-width: 1200px) {
@@ -697,7 +858,7 @@ footer ul li :hover {
 
 @media (max-width: 992px) {
   .container {
-    min-width: 960px;
+    min-width: 80%;
   }
   /*NAVBAR, SHOWCASE */
   .showcase-content {
@@ -746,6 +907,7 @@ footer ul li :hover {
     font-size: 15px;
   }
   /* DOWNLOAD APP */
+
   .downl-app .container{
 
   }
@@ -759,11 +921,40 @@ footer ul li :hover {
     margin-left: 3rem;
     margin-top: 2rem;
   } 
+
+  .downl-app .content{
+    margin-left: auto;
+  }
+  .downl-app .phone-image{
+    height: 115%;
+}
+
  /* ---------------------------------768 ------------------------- */
 @media (max-width: 768px) {
   .container {
     min-width: 80%;
   }
+
+
+    /* features and footer */
+    .mobile img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      height: auto;
+    }
+  
+    #features .container {
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    footer {
+      padding: 0 0 22rem 0;
+    }
+  }
+
+
   #showcase {
     background-image: url(../img/bluebg.png);
     background-position-y: top;
@@ -800,6 +991,7 @@ footer ul li :hover {
     margin-right: auto;
   }
   .buttons {
+
     justify-content: center;
     margin-bottom: 0rem;
   }
@@ -833,6 +1025,40 @@ footer ul li :hover {
     height: 20rem;
 }
 
+    justify-content: center;
+    margin-bottom: 0rem;
+  }
+  .btn-watch-video {
+    padding: 0rem 1.5rem;
+    height: 2.5rem;
+    border: 1.8px solid #ffbb00;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin-left: 1rem;
+  }
+  .btn-watch-video:hover {
+    border: 1.8px solid #FFBB00;
+    box-shadow: 3px 6px 10px #FFBB00;
+    text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
+    transform: rotateZ(-355deg)
+  }
+  /*LOGO*/
+  .logo3 {
+    display: none;
+  }
+  /* DOWNLOAD APP  */
+  .downl-app .container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+  
+   .downl-app .phone-image{
+     height: 85%;
+   }
 }
  /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
@@ -847,10 +1073,63 @@ footer ul li :hover {
     height: auto;
     background-size: 90%;
     margin-block: 1.8rem;
+
+  /* features and footer */
+  .container {
+    max-width: 530px;
+    height: 100%;
+  }
+  .mobile {
+    display: none;
   }
 
-  /* DOWNLOAD APP  */
+  .features-intro button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .features-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .features-icons {
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px var(--bg-primary);
+    padding: 1rem;
+  }
+
+  .features-icons a img {
+    /* margin:-1rem 0 0.5rem 0 ; */
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-section footer {
+    padding-bottom: 1rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-title span {
+    transform: translateY(15px);
+    margin-left: 0.1rem;
+  }   
+
+     /* DOWNLOAD APP  */
   .downl-app .container{
     text-align: center;
   }
-}
+
+  }
+
+ 
+
