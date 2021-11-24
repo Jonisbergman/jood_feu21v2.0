@@ -41,7 +41,7 @@ P {
   font-size: 0.9rem;
 }
 
-/* -----  CAROLINE - NAVBAR, SHOWCASE, LOGO ------------ */
+/* -----  NAVBAR, SHOWCASE, LOGO Av Caroline ------------ */
 #showcase {
   background-image: url(../img/Showcase.png);
   background-repeat: no-repeat;
@@ -231,10 +231,12 @@ P {
 
 
 /*LOGO BAR*/
+.logo-container {
+  overflow: hidden;
+}
 .logo {
   justify-content: space-between;
   margin: 5rem 0rem;
-  overflow: hidden;
 }
 .animate {
   position: relative;
