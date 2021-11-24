@@ -328,6 +328,7 @@ P {
 /* features section  Nchombua yvette*/
 #features {
   background-color: rgb(238, 232, 232);
+}
 
 .features-intro button {
   color: var(--primary-color);
@@ -605,58 +606,62 @@ footer ul li :hover {
 /* ------------- APP STATS End  ---------------- */
 
 /* ------- DOWNLOAD-APPLICATION Av Jessica Vakkuri ------- */ 
- .downl-app {
-    background: url("../img/Bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .downl-app h1, .contact-us h1 {
-      font-size: 40px;
-      font-family: 'Roboto' !important;
-  }
-  .downl-app .about-us p {
+.downl-app {
+  background: url("../img/Bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.downl-app .all-content {
+   margin-right: auto;
+    margin-left: auto;
+  }  
+
+.downl-app h1, .contact-us h1 {
+    font-size: 40px;
     font-family: 'Roboto' !important;
-  }
-  .downl-app .btn {  
-    justify-content:space-between; 
-    width: 14rem;
-    height: 4.5rem;
-    border: 1px transparent;
-    border-radius: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #fff;
-    cursor: pointer;
-  }
-  .downl-app .btn p {
-    font-size: 0.75em;
-    font-family: 'Roboto'!important;
-    font-weight: normal;
-    padding-top: 1rem;  
-    padding-left: 1.5rem;
-    text-align: left;
-  }
-  .downl-app .btn span{
-    font-size: 22px;
-    font-family: 'Roboto';
-    font-weight: bold;
-  }
-  .downl-app .content :hover{
-    animation: flipV 1s linear;
-  
-  }
-  .downl-app .image {
-    height: 30px;
-  }
-  .downl-app .phone-container {
-    height: 30rem;
-    width: 33rem;
-    overflow: hidden;
-  }
-  .downl-app .phone-image {
-    height: 100%;
-   }
-   
+}
+.downl-app .about-us p {
+  font-family: 'Roboto' !important;
+}
+.downl-app .btn {  
+  justify-content:space-between; 
+  width: 14rem;
+  height: 4.5rem;
+  border: 1px transparent;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+.downl-app .btn p {
+  font-size: 0.75em;
+  font-family: 'Roboto'!important;
+  font-weight: normal;
+  padding-top: 1rem;  
+  padding-left: 1.5rem;
+  text-align: left;
+}
+.downl-app .btn span{
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.downl-app .content :hover{
+  animation: flipV 1s linear;
+
+}
+.downl-app .image {
+  height: 100%;
+}
+.downl-app .phone-container {
+  height: 40rem;
+  overflow: hidden;
+}
+.downl-app .phone-image {
+  height: 120%;
+  width: 100%;
+ }
 
    /* ------ CONTACT US start Av Jessica Vakkuri----------*/
    .contact-us #email, #name{
@@ -906,28 +911,7 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
-  /* DOWNLOAD APP */
-
-  .downl-app .container{
-
-  }
-   .downl-app .all-content {
-    margin-right: auto;
-    margin-left: auto;
-  } 
   
-  .downl-app .phone-image{
-    height: 80%;
-    margin-left: 3rem;
-    margin-top: 2rem;
-  } 
-
-  .downl-app .content{
-    margin-left: auto;
-  }
-  .downl-app .phone-image{
-    height: 115%;
-}
 
  /* ---------------------------------768 ------------------------- */
 @media (max-width: 768px) {
@@ -1024,10 +1008,7 @@ footer ul li :hover {
   .downl-app .phone-image{
     height: 20rem;
 }
-
-    justify-content: center;
-    margin-bottom: 0rem;
-  }
+ 
   .btn-watch-video {
     padding: 0rem 1.5rem;
     height: 2.5rem;
