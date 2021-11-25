@@ -975,8 +975,14 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
-  
 
+  /* DOWNLOAD APP */
+    
+   .downl-app .all-content {
+    margin-right: auto;
+    margin-left: auto;
+  } 
+  
  /* ---------------------------------768 ------------------------- */
 @media (max-width: 768px) {
   .container {
@@ -1175,7 +1181,9 @@ footer ul li :hover {
     text-align: center;
   }
 
-  }
+}
+}
 
- 
+
+  }
 
