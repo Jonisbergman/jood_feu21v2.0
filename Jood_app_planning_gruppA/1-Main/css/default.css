@@ -390,6 +390,7 @@ P {
 /* features section  Nchombua yvette*/
 #features {
   background-color: rgb(238, 232, 232);
+  margin-bottom: -4rem;
 }
 
 .features-intro button {
@@ -407,13 +408,17 @@ P {
   transition: all 0.1s ease-in;
 }
 
-.features-intro h1,
-.features-icons h4 {
-  font-weight: 800;
+.features-intro h2,
+.features-icons h5 {
+  font-weight: bolder;
 }
 
 .features-icons {
   margin-bottom: 1.2rem;
+}
+
+.features-icons div p {
+  font-size: 0.8rem;
 }
 
 .features-icons a img:hover {
@@ -423,21 +428,23 @@ P {
   transition: all 0.2s ease-in;
 }
 
-/* -------- Ywette - END ---------------------------- */
-
 .features-icons a img {
   margin-right: 1rem;
 }
 
 .mobile img {
-  margin-left: -15rem;
+  margin-left: -25rem;
   height: 85%;
   object-fit: cover;
-  transition: hover 0.8s ease;
 }
 
 .features-intro {
   margin-right: -6rem;
+}
+
+p.mb-4 {
+  font-size: 0.85rem;
+  line-height: 1.9;
 }
 
 /* end of features ---------------------------------------------------------------------------------------*/
@@ -1144,6 +1151,10 @@ footer ul li :hover {
     display: none;
   }
 
+  #features {
+    margin-bottom: -6rem;
+  }
+
   .features-intro button {
     display: block;
     margin: 0 auto;
@@ -1160,6 +1171,11 @@ footer ul li :hover {
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px var(--bg-primary);
     padding: 1rem;
+  }
+
+  .features-icons div p {
+    padding: 1rem;
+    font-size: 1rem;
   }
 
   .features-icons a img {
