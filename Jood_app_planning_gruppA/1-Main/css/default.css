@@ -678,8 +678,7 @@ footer ul li :hover {
 .downl-app .all-content {
    margin-right: auto;
     margin-left: auto;
-  }  
-
+}  
 .downl-app h1, .contact-us h1 {
     font-size: 40px;
     font-family: 'Roboto' !important;
@@ -713,7 +712,6 @@ footer ul li :hover {
 }
 .downl-app .content :hover{
   animation: flipV 1s linear;
-
 }
 .downl-app .image {
   height: 100%;
@@ -726,7 +724,11 @@ footer ul li :hover {
   height: 120%;
   width: 100%;
  }
-
+ @keyframes flipV{
+  100% {
+    transform: rotate(360deg);
+  }
+}
    /* ------ CONTACT US start Av Jessica Vakkuri----------*/
    .contact-us #email, #name{
     background: #FBFBFB;
@@ -735,28 +737,19 @@ footer ul li :hover {
     border: transparent;
     border-radius: 10px;
     }
-  
-  .contact-us #message {
+    .contact-us #message {
     background: #FBFBFB;
     font-size: 16px;
     border: transparent;
     border-radius: 10px;
   }
-  
-  .contact-us .btn {
+    .contact-us .btn {
       width: 10rem;
       border-radius: 10px;
       font-size: 16px;
       background-color:#3096FE !important;
       border: 1px transparent;
     }
-  /* About-us animation på knapp */
-  @keyframes flipV{
-    100% {
-      transform: rotate(360deg);
-    }
-  }   
-  
    .contact-us .rubrik {
     top: 2%;
     right: 0%;
@@ -905,6 +898,13 @@ footer ul li :hover {
  /* ---------- FOOTER END ---------  */
 
 /* ------------ MEDIA QUERIES ----------------- */
+@media (max-width: 1400px) {
+  .container {
+    min-width: 80%;
+  }
+    .downl-app .phone-image {
+    padding-left: 3rem;
+   }
 
 @media (max-width: 1200px) {
   .container {
@@ -922,7 +922,20 @@ footer ul li :hover {
     margin-right: -1rem;
     font-size: 260%;
   }
+   /*DOWNLOAD APPLICATION*/
+   .downl-app .info-text{
+    text-align: left;
+  }
+  .downl-app .phone-container {
+    height: 35rem;
+    overflow: hidden;
+  }
+  .downl-app .phone-image {
+    height: 100%;
+    padding-left: 5rem;
+  }
 }
+
 /* -----------------------------992-------------*/
 
 @media (max-width: 992px) {
@@ -975,14 +988,13 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
-
-  /* DOWNLOAD APP */
-    
-   .downl-app .all-content {
-    margin-right: auto;
-    margin-left: auto;
-  } 
-  
+  .downl-app .info-text {
+    text-align: center;
+  }
+  .downl-app .phone-image {
+    padding-left: 3rem;
+    margin-top: 1rem;
+   } 
  /* ---------------------------------768 ------------------------- */
 @media (max-width: 768px) {
   .container {
@@ -1071,15 +1083,7 @@ footer ul li :hover {
   .logo3 {
     display: none;
   }
-  /* DOWNLOAD APP  */
-  .downl-app .content{
-    margin-left: auto;
-  }
-  .downl-app .phone-image{
-    height: 20rem;
-}
- 
-  .btn-watch-video {
+   .btn-watch-video {
     padding: 0rem 1.5rem;
     height: 2.5rem;
     border: 1.8px solid #ffbb00;
@@ -1106,10 +1110,9 @@ footer ul li :hover {
     padding-top: 2rem;
     padding-bottom: 2rem;
    }
-  
-   .downl-app .phone-image{
-     height: 85%;
-   }
+  .downl-app .phone-image{
+    height: 85%;
+  }
 }
  /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
@@ -1175,12 +1178,4 @@ footer ul li :hover {
     transform: translateY(15px);
     margin-left: 0.1rem;
   }   
-
-     /* DOWNLOAD APP  */
-  .downl-app .container{
-    text-align: center;
-  }
-
 }
-
-
