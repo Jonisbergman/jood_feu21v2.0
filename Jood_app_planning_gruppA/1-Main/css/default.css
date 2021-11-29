@@ -565,16 +565,14 @@ p.mb-4 {
   background-size: cover;
 }
 .downl-app .all-content {
-  margin-right: auto;
-  margin-left: auto;
+   margin-right: auto;
+    margin-left: auto;
+}  
+.downl-app h1, .contact-us h1 {
+    font-size: 40px;
+    font-family: 'Roboto' !important;
 }
-
-.downl-app h1,
-.contact-us h1 {
-  font-size: 40px;
-  font-family: "Roboto" !important;
-}
-.downl-app .about-us p {
+  .downl-app .about-us p {
   font-family: "Roboto" !important;
 }
 .downl-app .btn {
@@ -614,7 +612,55 @@ p.mb-4 {
 .downl-app .phone-image {
   height: 120%;
   width: 100%;
+ }
+ @keyframes flipV{
+  100% {
+    transform: rotate(360deg);
+  }
 }
+   /* ------ CONTACT US start Av Jessica Vakkuri----------*/
+   .contact-us #email, #name{
+    background: #FBFBFB;
+    height: 3.5rem;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 10px;
+    }
+    .contact-us #message {
+    background: #FBFBFB;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 10px;
+  }
+    .contact-us .btn {
+      width: 10rem;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color:#3096FE !important;
+      border: 1px transparent;
+    }
+   .contact-us .rubrik {
+    top: 2%;
+    right: 0%;
+    font-size: 30px;
+    text-align: center;
+    -webkit-transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+    transition: letter-spacing 2s ease-out, margin-right 2s ease-out;
+    display:block;
+    margin-right:0px;
+    letter-spacing: 0;
+  }
+  .contact-us .rubrik:hover {
+    letter-spacing: 0px;
+    margin-right:20px;
+    letter-spacing: 20px;
+  }
+  .contact-us .rubrik span{
+     letter-spacing: 0;
+  }
+  
+/* ------------ Contact-us end -------------------- */
+
 
 /* ------ CONTACT US start Av Jessica Vakkuri----------*/
 .contact-us #email,
@@ -752,6 +798,13 @@ footer ul li :hover {
 
 
 /* ------------ MEDIA QUERIES ----------------- */
+@media (max-width: 1400px) {
+  .container {
+    min-width: 80%;
+  }
+    .downl-app .phone-image {
+    padding-left: 3rem;
+   }
 
 @media (max-width: 1200px) {
   .container {
@@ -770,13 +823,20 @@ footer ul li :hover {
     font-size: 260%;
   }
 
-  .mobile img {
-    width: 45vw;
-    height: 100vh;
-    object-fit: contain;
+   /*DOWNLOAD APPLICATION*/
+   .downl-app .info-text{
+    text-align: left;
+  }
+  .downl-app .phone-container {
+    height: 35rem;
     overflow: hidden;
   }
+  .downl-app .phone-image {
+    height: 100%;
+    padding-left: 5rem;
+  }
 }
+
 /* -----------------------------992-------------*/
 
 @media (max-width: 992px) {
@@ -829,28 +889,13 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
-
-  /* DOWNLOAD APP */
-
-  .downl-app .all-content {
-    margin-right: auto;
-    margin-left: auto;
+  .downl-app .info-text {
+    text-align: center;
   }
-
-  /* features and footer */
-
-  .mobile img {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-    height: auto;
-  }
-
-  #features .container {
-    flex-direction: column;
-    height: 100%;
-  }
-
+  .downl-app .phone-image {
+    padding-left: 3rem;
+    margin-top: 1rem;
+   } 
   /* ---------------------------------768 ------------------------- */
   @media (max-width: 768px) {
     .container {
@@ -914,6 +959,11 @@ footer ul li :hover {
     text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
     transform: rotateZ(-355deg);
   }
+
+  /*LOGO*/
+  .logo3 {
+    display: none;
+  }
   .btn-watch-video {
     padding: 0rem 1.5rem;
     height: 2.5rem;
@@ -957,8 +1007,7 @@ footer ul li :hover {
   .downl-app .container {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  
+   }
   .downl-app .phone-image {
     height: 85%;
   }
@@ -1032,10 +1081,4 @@ footer ul li :hover {
   .footer-title span {
     transform: translateY(15px);
     margin-left: 0.1rem;
-  }
 
-  /* DOWNLOAD APP  */
-  .downl-app .container {
-    text-align: center;
-  }
-}
