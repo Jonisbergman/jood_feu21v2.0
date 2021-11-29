@@ -857,24 +857,6 @@ footer ul li :hover {
       min-width: 80%;
     }
 
-    /* features and footer */
-    .mobile img {
-      display: block;
-      margin: 0 auto;
-      width: 50%;
-      height: auto;
-    }
-
-    #features .container {
-      flex-direction: column;
-      height: 100%;
-    }
-
-    footer {
-      padding: 0 0 22rem 0;
-    }
-  }
-
   #showcase {
     background-image: url(../img/bluebg.png);
     background-position-y: top;
@@ -932,18 +914,6 @@ footer ul li :hover {
     text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
     transform: rotateZ(-355deg);
   }
-  /*LOGO*/
-  .logo3 {
-    display: none;
-  }
-  /* DOWNLOAD APP  */
-  .downl-app .content {
-    margin-left: auto;
-  }
-  .downl-app .phone-image {
-    height: 20rem;
-  }
-
   .btn-watch-video {
     padding: 0rem 1.5rem;
     height: 2.5rem;
@@ -966,12 +936,29 @@ footer ul li :hover {
   .logo3 {
     display: none;
   }
+ 
+  /* features and footer */
+  .mobile img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+  }
+  #features .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  footer {
+    padding: 0 0 22rem 0;
+  }
+
+  
   /* DOWNLOAD APP  */
   .downl-app .container {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-
+  
   .downl-app .phone-image {
     height: 85%;
   }
