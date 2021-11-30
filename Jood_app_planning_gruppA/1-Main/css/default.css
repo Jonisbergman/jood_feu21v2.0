@@ -25,6 +25,14 @@ html {
   font-family: "Roboto";
 }
 
+h6{
+  font-family: "Roboto Black" !important;
+  font-size: 40px !important;
+  color: #333333 !important;
+  font-weight: bold !important;
+}
+
+
 .roboto {
   font-family: "Roboto";
 }
@@ -38,6 +46,16 @@ html {
 }
 P {
   font-size: 0.9rem;
+}
+.bodytext {
+  font-family: "Roboto Regular" sans-serif;
+  font-size: 16px;
+  color: #8a8a8a ;
+} 
+::placeholder {
+  font-family: "Roboto Regular" sans-serif !important;
+  font-size: 16px !important;
+  color: #ccc!important;  
 }
 
 /* -----  NAVBAR, SHOWCASE, LOGO Av Caroline ------------ */
@@ -258,7 +276,6 @@ P {
 /* ----  Navbar, Showcase, Logo  END ------ */
 
 /* SIMON - About ---------------------------------------------------- */
-
 .container-about {
   display: flex;
   justify-content: space-around;
@@ -274,6 +291,7 @@ P {
 
 .about-button {
   padding-top: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .a-intro {
@@ -283,7 +301,7 @@ P {
   font-size: 1.2rem;
   font-weight: 800;
   border: none;
-  padding: 0.4rem;
+  padding: .4rem;
   width: 30%;
   font-family: roboto;
 }
@@ -307,73 +325,72 @@ P {
 
 .btn1 {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 200px;
-  height: 70px;
-  border-radius: 0.5rem;
-  background-color: #f8f8f8;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 232px;
+  height: 80px;
+  border-radius: .5rem;
+  background-color: #F8F8F8;
+  background-color: #F8F8F8;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
-  padding-right: 2rem;
 }
 
 .btn1 p {
   padding-top: 1rem;
-  font-weight: 400;
-  font-weight: lighter;
+  font-weight: normal;
   font-family: bold;
-  text-align: center;
-  color: #6b6b6b;
-  font-family: bold;
+  color: #6B6B6B;
+  font-size: 12px;
+  text-align: left;
 }
 
 .btn1 p span {
   font-weight: bold;
-  font-size: 1.1rem;
-  padding-left: 0.5rem;
-  color: #111111;
+  font-size: 22px;
+  color:#111111;
   font-family: roboto;
 }
 
 .icon-button2 {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
+  padding-left: 1.5rem;
 }
 
 .btn2 {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 200px;
-  height: 70px;
-  border-radius: 0.5rem;
-  background-color: #f8f8f8;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-right: 2rem;
+  width: 232px;
+  height: 80px;
+  border-radius: .5rem;
+  background-color: #F8F8F8;
+  background-color: #F8F8F8;
   border: 1px solid transparent;
   cursor: pointer;
   font-weight: 600;
-  padding-right: 2rem;
 }
 
 .btn2 p {
-  padding-top: 1rem;
-  font-weight: 400;
-  font-weight: lighter;
+  text-align: left;
+  padding-top: 1rem; 
+  font-weight: normal;
   font-family: bold;
-  text-align: center;
-  color: #6b6b6b;
-  font-family: bold;
+  color: #6B6B6B;
+  font-size: 12px;
 }
 
-.bt2 p span {
+.btn2 p span {
   font-weight: bold;
-  font-size: 1.1rem;
-  padding-left: 0.5rem;
-  color: #111111;
+  font-size: 22px;
+  color:#111111;
   font-family: roboto;
 }
-
 /* Simons About - END ----------------------------------------------*/
 
 /* features section  Nchombua yvette -------------------------------*/
@@ -418,6 +435,7 @@ p.mb-4 {
   border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 800;
+  border: none; 
 }
 .features-intro button:hover {
   background-color: var(--primary-color);
@@ -509,7 +527,7 @@ p.mb-4 {
   font-weight: bold;
 }
 #applications p {
-  font-family: "Robot Regular" sans-serif;
+  font-family: "Roboto Regular" sans-serif;
   font-size: 16px;
   color: #8a8a8a;
 }
@@ -524,11 +542,8 @@ p.mb-4 {
   background-size: 80%;
   margin-top: 0rem;
 }
-.app-stats-content h1 {
-  text-align: center;
-  font-family: "Roboto Black";
-  font-size: 250%;
-  color: #333333;
+.app-stats-content h6 {
+  text-align: center; 
   padding-top: 5.5rem;
   padding-bottom: 0.8rem;
 }
@@ -565,20 +580,18 @@ p.mb-4 {
   background-size: cover;
 }
 .downl-app .all-content {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.downl-app h1,
-.contact-us h1 {
-  font-size: 40px;
-  font-family: "Roboto" !important;
+   margin-right: auto;
+    margin-left: auto;
+}  
+.downl-app h1, .contact-us h1 {
+    font-size: 40px;
+    font-family: 'Roboto' !important;
 }
 .downl-app .about-us p {
-  font-family: "Roboto" !important;
+  font-family: 'Roboto' !important;
 }
-.downl-app .btn {
-  justify-content: space-between;
+.downl-app .btn {  
+  justify-content:space-between; 
   width: 14rem;
   height: 4.5rem;
   border: 1px transparent;
@@ -590,18 +603,18 @@ p.mb-4 {
 }
 .downl-app .btn p {
   font-size: 0.75em;
-  font-family: "Roboto" !important;
+  font-family: 'Roboto'!important;
   font-weight: normal;
-  padding-top: 1rem;
+  padding-top: 1rem;  
   padding-left: 1.5rem;
   text-align: left;
 }
-.downl-app .btn span {
+.downl-app .btn span{
   font-size: 22px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: bold;
 }
-.downl-app .content :hover {
+.downl-app .content :hover{
   animation: flipV 1s linear;
 }
 .downl-app .image {
@@ -614,6 +627,11 @@ p.mb-4 {
 .downl-app .phone-image {
   height: 120%;
   width: 100%;
+ }
+ @keyframes flipV{
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ------ CONTACT US start Av Jessica Vakkuri----------*/
@@ -669,12 +687,12 @@ p.mb-4 {
 
 /* ------------ Contact-us end -------------------- */
 
-
-
 /* --------------- Footer -------------- */
 
 .footer-section {
-  background-color: var(--bg-primary);
+  background-image: url(../img/bluebg.png);
+  background-size: 150%;
+  background-position-x: center;
 }
 .footer-title span {
   height: 10px;
@@ -752,6 +770,14 @@ footer ul li :hover {
 
 
 /* ------------ MEDIA QUERIES ----------------- */
+@media (max-width: 1400px) {
+  .container {
+    min-width: 80%;
+  }
+    .downl-app .phone-image {
+    padding-left: 3rem;
+   }
+  }
 
 @media (max-width: 1200px) {
   .container {
@@ -775,6 +801,18 @@ footer ul li :hover {
     height: 100vh;
     object-fit: contain;
     overflow: hidden;
+  }
+
+  .downl-app .info-text h1{
+    font-size: 34px;
+  }
+  .downl-app .phone-container {
+    height: 35rem;
+    overflow: hidden;
+  }
+  .downl-app .phone-image {
+    height: 100%;
+    padding-left: 5rem;
   }
 }
 /* -----------------------------992-------------*/
@@ -831,11 +869,13 @@ footer ul li :hover {
   }
 
   /* DOWNLOAD APP */
-
-  .downl-app .all-content {
-    margin-right: auto;
-    margin-left: auto;
+  .downl-app .info-text {
+    text-align: center;
   }
+  .downl-app .phone-image {
+    padding-left: 3rem;
+    margin-top: 1rem;
+   } 
 
   /* features and footer */
 
@@ -862,6 +902,11 @@ footer ul li :hover {
     background-position-y: top;
     background-size: auto;
   }
+.container-about img {
+ display: none;
+}
+
+
   .button-app {
     width: 23%;
     font-size: 85%;
@@ -954,14 +999,14 @@ footer ul li :hover {
 
   
   /* DOWNLOAD APP  */
-  .downl-app .container {
+  .downl-app .container{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  
-  .downl-app .phone-image {
+   }
+  .downl-app .phone-image{
     height: 85%;
   }
+  
 }
 /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
@@ -987,10 +1032,10 @@ footer ul li :hover {
   #features {
     margin-bottom: -6rem;
   }
-
+  
   .features-intro button {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;   
   }
 
   .features-intro h1 {
@@ -1038,4 +1083,5 @@ footer ul li :hover {
   .downl-app .container {
     text-align: center;
   }
+}
 }
