@@ -279,9 +279,20 @@ P {
 .container-about {
   display: flex;
   justify-content: space-around;
-  padding-top: 5vh;
+  padding-top: 5vh;  
+}
+.aboutusiphone {
+/* max-width: 567px ; */
+max-height: 600px;
+
 }
 
+.about-btns {
+  /* display: flex; */
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 3rem;
+}
 .text-about h1 {
   display: flex;
   justify-content: left;
@@ -321,6 +332,8 @@ P {
 .icon-button1 {
   display: inline-block;
   width: 14rem;
+  align-self: flex-start;
+  margin-right: 2rem;
 }
 
 .btn1 {
@@ -330,8 +343,7 @@ P {
   justify-content: space-evenly;
   width: 232px;
   height: 80px;
-  border-radius: .5rem;
-  background-color: #F8F8F8;
+  border-radius: .5rem;  
   background-color: #F8F8F8;
   border: 1px solid transparent;
   cursor: pointer;
@@ -357,7 +369,8 @@ P {
 .icon-button2 {
   display: inline-block;
   margin-top: 15px;
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
+  align-self: flex-end;
 }
 
 .btn2 {
@@ -365,7 +378,7 @@ P {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   width: 232px;
   height: 80px;
   border-radius: .5rem;
@@ -770,6 +783,7 @@ footer ul li :hover {
 
 
 /* ------------ MEDIA QUERIES ----------------- */
+/* 1400--------------------------------------------- */
 @media (max-width: 1400px) {
   .container {
     min-width: 80%;
@@ -777,8 +791,12 @@ footer ul li :hover {
     .downl-app .phone-image {
     padding-left: 3rem;
    }
-  }
+ .container-about {
+   min-width: 90%;
+ }
 
+  }
+/* 1200 ------------------------------------------ */
 @media (max-width: 1200px) {
   .container {
     min-width: 80%;
@@ -795,14 +813,15 @@ footer ul li :hover {
     margin-right: -1rem;
     font-size: 260%;
   }
-
-  .mobile img {
+  .about-btns {
+    flex-direction: column;
+  }
+   .mobile img {
     width: 45vw;
     height: 100vh;
     object-fit: contain;
     overflow: hidden;
   }
-
   .downl-app .info-text h1{
     font-size: 34px;
   }
