@@ -163,11 +163,6 @@ P {
   margin-top: -3rem;
   margin-left: -3rem;
 }
-
-.ball img {
-  margin-right: -2rem;
-  margin-bottom: 0.4rem;
-}
 .buttons {
   display: flex;
   justify-content: flex-start;
@@ -214,32 +209,30 @@ P {
   color: white;
 }
 .ball {
-  display: inline-block;
   background-color: #ffbb00;
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  transform: translate(-35%, -5%);
   border: none;
+}
+.btn-watch-video .ball i {
+  color: white;
+  font-size: 2rem;
 }
 #video {
   height: 13px;
-  transform: translate(-115%, 68%);
+  margin-left: 3px;
+}
+.playknapp {
+  margin-left: 0.7rem;
+  font-size: 1.7vh;
 }
 .btn-watch-video:hover .ball {
   background-color: #ffbb00;
-  width: 30px;
-  height: 30px;
-  left: -7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: scale(.9);
   border-radius: 50%;
   outline: 1.5px solid peachpuff;
   outline-offset: 5px;
-}
-.btn-watch-video:hover img {
-  margin-bottom: 0.99rem;
 }
 .btn-watch-video:hover {
   font-size: 110%;
@@ -548,16 +541,17 @@ p.mb-4 {
 
 /* ----- APPLICATIONS STATISTICS Av Caroline ------------- */
 .app-statistics {
-  height: 500px;
+  min-height: 500px;
   background-image: url(../img/Layer\ 815.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
-  margin-top: 0rem;
+}
+.app-stats-content {
+  margin-top: 5.5rem;
 }
 .app-stats-content h6 {
   text-align: center; 
-  padding-top: 5.5rem;
   padding-bottom: 0.8rem;
 }
 .app-stats-text {
@@ -879,12 +873,19 @@ footer ul li :hover {
   .logo4 {
     display: none;
   }
+  /* APPLICATION SCREENS  */
+  #app-text {
+    margin-top: 3rem;
+  }
   /*APPLICATION STATISTICS*/
   .statistic-text h2 {
     font-size: 33px;
   }
   .statistic-text h4 {
     font-size: 15px;
+  }
+  .app-stats-content {
+    margin-top: 0rem;
   }
 
   /* DOWNLOAD APP */
@@ -895,6 +896,10 @@ footer ul li :hover {
     padding-left: 3rem;
     margin-top: 1rem;
    } 
+
+   .contact-us .container {
+     margin-top: 0 !important;
+   }
 
   /* features and footer */
 
@@ -921,11 +926,8 @@ footer ul li :hover {
     background-position-y: top;
     background-size: auto;
   }
-.container-about img {
- display: none;
-}
-
-
+  
+  
   .button-app {
     width: 23%;
     font-size: 85%;
@@ -996,11 +998,17 @@ footer ul li :hover {
     text-shadow: 3px 6px 10px rgba(51, 51, 51, 0.452);
     transform: rotateZ(-355deg);
   }
+  .playknapp {
+    margin-left: 0rem;
+  }
   /*LOGO*/
   .logo3 {
     display: none;
   }
- 
+  /* ABOUT */
+  .container-about img {
+   display: none;
+  }
   /* features and footer */
   .mobile img {
     display: block;
@@ -1012,9 +1020,9 @@ footer ul li :hover {
     flex-direction: column;
     height: 100%;
   }
-  footer {
+  /* footer {
     padding: 0 0 22rem 0;
-  }
+  }  DENNA KOD GÖR RUTAN VÄLDIGT LÅNG.../Caroline */
 
   
   /* DOWNLOAD APP  */
