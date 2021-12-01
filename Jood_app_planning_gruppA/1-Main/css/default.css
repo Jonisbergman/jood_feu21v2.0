@@ -152,11 +152,11 @@ P {
 }
 .showcase-text p {
   font-family: "Poppins";
-  font-size: 1.5vh;
-  width: 70%;
-  letter-spacing: 0.1vh;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 4vh;
   margin-top: 5%;
+  width: 70%;
 }
 .mobiler img {
   width: 130%;
@@ -816,6 +816,18 @@ footer ul li :hover {
     object-fit: contain;
     overflow: hidden;
   }
+  
+   #app-text {
+    margin-top: 3rem;
+  }
+
+  .app-stats-content {
+    margin-top: 0rem;
+  }
+  
+  .contact-us .container {
+    margin-top: 0 !important;
+  }
   .downl-app .info-text h1{
     font-size: 34px;
   }
@@ -873,10 +885,7 @@ footer ul li :hover {
   .logo4 {
     display: none;
   }
-  /* APPLICATION SCREENS  */
-  #app-text {
-    margin-top: 3rem;
-  }
+ 
   /*APPLICATION STATISTICS*/
   .statistic-text h2 {
     font-size: 33px;
@@ -884,9 +893,7 @@ footer ul li :hover {
   .statistic-text h4 {
     font-size: 15px;
   }
-  .app-stats-content {
-    margin-top: 0rem;
-  }
+  
 
   /* DOWNLOAD APP */
   .downl-app .info-text {
@@ -897,9 +904,6 @@ footer ul li :hover {
     margin-top: 1rem;
    } 
 
-   .contact-us .container {
-     margin-top: 0 !important;
-   }
 
   /* features and footer */
 
