@@ -642,36 +642,6 @@ p.mb-4 {
 }
 
 /* ------ CONTACT US start Av Jessica Vakkuri----------*/
-.contact-us #email,
-#name {
-  background: #fbfbfb;
-  height: 3.5rem;
-  font-size: 16px;
-  border: transparent;
-  border-radius: 10px;
-}
-
-.contact-us #message {
-  background: #fbfbfb;
-  font-size: 16px;
-  border: transparent;
-  border-radius: 10px;
-}
-
-.contact-us .btn {
-  width: 10rem;
-  border-radius: 10px;
-  font-size: 16px;
-  background-color: #3096fe !important;
-  border: 1px transparent;
-}
-/* About-us animation på knapp */
-@keyframes flipV {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .contact-us .rubrik {
   top: 2%;
   right: 0%;
@@ -690,6 +660,30 @@ p.mb-4 {
 }
 .contact-us .rubrik span {
   letter-spacing: 0;
+}
+.contact-us #email, #name {
+  background: #fbfbfb;
+  height: 3.5rem;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 10px;
+}
+.contact-us #message {
+  background: #fbfbfb;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 10px;
+}
+.contact-us .btn {
+  width: 10rem;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #3096fe !important;
+  border: 1px transparent;
+}
+.contact-us .btn:hover {
+    box-shadow: 2px 2px 13px rgba(90, 90, 90, 0.5),
+    2px 2px 13px rgba(85, 85, 85, 0.4);
 }
 
 /* ------------ Contact-us end -------------------- */
