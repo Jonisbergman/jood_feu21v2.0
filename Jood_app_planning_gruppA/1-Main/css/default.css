@@ -278,13 +278,16 @@ P {
 /* SIMON - About ---------------------------------------------------- */
 .container-about {
   display: flex;
-  justify-content: space-around;
-  padding-top: 5vh;  
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  /* padding-top: 5vh; */
 }
+
+
 .aboutusiphone {
 /* max-width: 567px ; */
 max-height: 600px;
-
 }
 
 .about-btns {
@@ -293,6 +296,8 @@ max-height: 600px;
   flex-direction: row;
   gap: 3rem;
 }
+
+
 .text-about h1 {
   display: flex;
   justify-content: left;
@@ -327,6 +332,7 @@ max-height: 600px;
   display: flex;
   justify-content: right;
   font-family: roboto;
+  width: 100%;
 }
 
 .icon-button1 {
@@ -791,11 +797,10 @@ footer ul li :hover {
     .downl-app .phone-image {
     padding-left: 3rem;
    }
- .container-about {
-   min-width: 90%;
- }
 
   }
+
+    
 /* 1200 ------------------------------------------ */
 @media (max-width: 1200px) {
   .container {
@@ -814,7 +819,7 @@ footer ul li :hover {
     font-size: 260%;
   }
   .about-btns {
-    flex-direction: column;
+    flex-direction: row;
   }
    .mobile img {
     width: 45vw;
@@ -833,7 +838,23 @@ footer ul li :hover {
     height: 100%;
     padding-left: 5rem;
   }
+
+  .aboutusiphone {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    margin-top: 5rem;
+   }
+
+   .text-about .bodytext {
+     width: 100%;
+  }
+
+
+  
 }
+
+
 /* -----------------------------992-------------*/
 
 @media (max-width: 992px) {
@@ -910,20 +931,38 @@ footer ul li :hover {
     height: 100%;
   }
 
+  .aboutusiphone {
+    display: none;
+  }
+
+
+  .container-about {
+    flex: none;
+    text-align: center;
+  }
+  
+  .about-btns {
+    justify-content: center;
+  }
+
+}
+
+
+
+
   /* ---------------------------------768 ------------------------- */
   @media (max-width: 768px) {
     .container {
       min-width: 80%;
     }
+    
 
   #showcase {
     background-image: url(../img/bluebg.png);
     background-position-y: top;
     background-size: auto;
   }
-.container-about img {
- display: none;
-}
+
 
 
   .button-app {
@@ -1025,7 +1064,7 @@ footer ul li :hover {
   .downl-app .phone-image{
     height: 85%;
   }
-  
+
 }
 /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
@@ -1102,5 +1141,24 @@ footer ul li :hover {
   .downl-app .container {
     text-align: center;
   }
+
+.container-about {
+  text-align: center;
 }
+
+.text-about h6 {
+  width: 100%;
+  text-align: center;
+}
+
+
+.about-btns {
+  text-align: left;
+  padding-left: 8rem;
+}
+
+  .aboutusiphone {
+    display: none;
+  }
+
 }
