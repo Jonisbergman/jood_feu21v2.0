@@ -1072,6 +1072,15 @@ footer ul li :hover {
     height: 85%;
   }
 
+  .icon-button1 .btn1 img {
+    display: flex;
+  }
+
+  .icon-button2 .btn2 img {
+    display: flex;
+  }
+
+
 }
 /* ---------------------------------576 ----------------------- */
 @media (max-width: 576px) {
